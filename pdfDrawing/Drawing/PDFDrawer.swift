@@ -120,6 +120,9 @@ public class PDFDrawer {
     var prevPoint2 : CGPoint?
     var isFirst = true
     
+    public init() {}
+
+    
 }
 
 extension PDFDrawer: DrawingGestureRecognizerDelegate {
