@@ -121,22 +121,20 @@ public class PDFDrawer {
         var prevPoint2 : CGPoint?
         var isFirst = true
     }
-    weak var pdfView: PDFView!
-    private var path: UIBezierPath?
-    var currentAnnotation : DrawingAnnotation?
-    var currentAnnotation1 : DrawingAnnotation?
-    var currentPoint : CGPoint?
-    var currentPage: PDFPage?
-    var currentPage1: PDFPage?
-    var color = UIColor.black // default color is black
-    var drawingTool = DrawingTool.pen
-    var pathArrays : [Path] = []
-    var bufferArrays : [Path] = []
-    var undoAnnotation : [MyPDFAnnotaion] = []
-    var redoAnnotation : [MyPDFAnnotaion] = []
-    var historyAnnotation : [MyPDFAnnotaion] = []
-    weak var delegate : PDFDrawerDelegate? = .none
-    open var fileName : String?
+    weak public var pdfView: PDFView!
+    public var path: UIBezierPath?
+    public var currentAnnotation : DrawingAnnotation?
+    public var currentAnnotation1 : DrawingAnnotation?
+    public var currentPoint : CGPoint?
+    public var currentPage: PDFPage?
+    public var currentPage1: PDFPage?
+    public var color = UIColor.black // default color is black
+    public var drawingTool = DrawingTool.pen
+    public var undoAnnotation : [MyPDFAnnotaion] = []
+    public var redoAnnotation : [MyPDFAnnotaion] = []
+    public var historyAnnotation : [MyPDFAnnotaion] = []
+    weak public var delegate : PDFDrawerDelegate? = .none
+    public var fileName : String?
     var point : CGPoint?
     var border : PDFBorder?
     var page : PDFPage?
@@ -281,7 +279,7 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         let annotation = DrawingAnnotation(bounds: page.bounds(for: pdfView.displayBox), forType: .ink, withProperties: nil)
         let uuid = UUID().uuidString
         if(redoAnnotation.count > 0){
-            pathArrays.removeAll()
+    
             redoAnnotation.removeAll()
             let border = PDFBorder()
             border.lineWidth = drawingTool.width
@@ -433,8 +431,6 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         let p = Path(path: path, color: color, point: point, border: border, page: page, alpha: alpha, tool: tool)
         if(canUndo()) {
             //            delegate?.test(isUndo: true)
-            self.bufferArrays.append(p)
-            self.pathArrays.removeLast()
             for undoArray in undoAnnotation {
                 
             }
@@ -486,11 +482,7 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
     func redoLastestStep (path: UIBezierPath, color: UIColor ,point: CGPoint,border: PDFBorder, page: PDFPage, alpha: CGFloat, tool :Int ) {
         if(canRedo()){
             let p = Path(path: path, color: color, point: point, border: border, page: page, alpha: alpha, tool: tool)
-            self.pathArrays.append(p)
-            self.bufferArrays.removeLast()
-            //            drawAnnotation(path:path,color:color,point:point,border: border,page: page,alpha: alpha, tool: tool)
-            delegate?.undo(isUndo: pathArrays.count > 0)
-            delegate?.redo(isRedo: bufferArrays.count > 0)
+       
             //            let annotation = page.redo(at: point)
             //            annotation!.page?.addAnnotation(annotation!)
             // pdfView.setNeedsDisplay()
