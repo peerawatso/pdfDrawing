@@ -1,22 +1,22 @@
 //
 //  DrawingAnnotation.swift
-//  pdfDrawing
+//  PDFKit Demo
 //
-//  Created by DSolution Macbook on 31/8/2562 BE.
-//  Copyright © 2562 DSolution. All rights reserved.
+//  Created by Tim on 31/01/2019.
+//  Copyright © 2019 Tim. All rights reserved.
 //
 
 import Foundation
 import PDFKit
 
-public class DrawingAnnotation: MyPDFAnnotaion {
+class DrawingAnnotation: MyPDFAnnotaion {
     public var path = UIBezierPath()
     
-    public func completed() {
+    func completed() {
         add(path)
     }
     
-    override public func draw(with box: PDFDisplayBox, in context: CGContext) {
+    override func draw(with box: PDFDisplayBox, in context: CGContext) {
         super.draw(with: box, in: context)
         let pathCopy = path.copy() as! UIBezierPath
         UIGraphicsPushContext(context)
@@ -35,5 +35,7 @@ public class DrawingAnnotation: MyPDFAnnotaion {
         
         UIGraphicsPopContext()
     }
-
+    
+    
+    
 }

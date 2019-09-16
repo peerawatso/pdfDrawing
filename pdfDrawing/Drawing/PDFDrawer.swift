@@ -8,8 +8,9 @@
 
 import Foundation
 import PDFKit
+import SQLite3
 
-public enum DrawingTool: Int {
+enum DrawingTool: Int {
     case eraser = 0
     case pencil = 11
     case pen = 12
@@ -79,7 +80,7 @@ public enum DrawingTool: Int {
     }
 }
 
-public protocol PDFDrawerDelegate : class{
+protocol PDFDrawerDelegate : class{
     func undo(isUndo : Bool)
     func redo(isRedo : Bool)
     func checkSelect()
@@ -87,9 +88,9 @@ public protocol PDFDrawerDelegate : class{
     //    func selectDB(page : PDFPage) -> [MyPDFAnnotaion]
 }
 
-public class PDFDrawer {
+class PDFDrawer {
     weak var pdfView: PDFView!
-    public var path: UIBezierPath?
+    private var path: UIBezierPath?
     var currentAnnotation : DrawingAnnotation?
     var currentAnnotation1 : DrawingAnnotation?
     var currentPoint : CGPoint?
@@ -115,48 +116,72 @@ public class PDFDrawer {
     var pdfDocument: PDFDocument?
     var currentAnnotation2: MyPDFAnnotaion?
     var Addannotations : PDFAnnotation?
-    
+    var prevPoint : CGPoint?
+    var prevPoint2 : CGPoint?
+    var isFirst = true
     
 }
 
 extension PDFDrawer: DrawingGestureRecognizerDelegate {
-    public func gestureRecognizerBegan(_ location: CGPoint) {
+    func gestureRecognizerBegan(_ location: CGPoint, _ prevLocation: CGPoint) {
         pdfView.isUserInteractionEnabled = true
         guard let page = pdfView.page(for: location, nearest: true) else { return }
         currentPage = page
         let convertedPoint = pdfView.convert(location, to: currentPage!)
+        let convertedPoint2 = pdfView.convert(prevLocation, to: currentPage!)
         path = UIBezierPath()
         path?.move(to: convertedPoint)
+        prevPoint = convertedPoint
+        prevPoint2 = convertedPoint2
         delegate?.checkSelect()
     }
     
-    public func gestureRecognizerMoved(_ location: CGPoint) {
+    func gestureRecognizerMoved(_ location: CGPoint, _ prevLocation: CGPoint) {
         guard let page = currentPage else { return }
         let convertedPoint = pdfView.convert(location, to: page)
+        let convertedPoint2 = pdfView.convert(prevLocation, to: page)
         if drawingTool == .eraser {
             if undoAnnotation.count >= 1{
                 removeAnnotationUndo(point: convertedPoint, page: page)
+                removeAnnotationAtPoint(point: convertedPoint, page: page)
                 return
             }else {
                 removeAnnotationAtPoint(point: convertedPoint, page: page)
                 return
             }
         }
-        
+        //        if let prevPoint = prevPoint {
+        //            let midPoint = CGPoint(
+        //                x: (convertedPoint.x + prevPoint.x) / 2,
+        //                y: (convertedPoint.y + prevPoint.y) / 2)
+        //            if isFirst {
+        //                path?.addLine(to: convertedPoint)
+        //                path?.move(to: convertedPoint)
+        //            } else {
+        //                path?.addCurve(to: midPoint, controlPoint1: prevPoint, controlPoint2: convertedPoint)
+        //                path?.move(to: midPoint)
+        //
+        //            }
+        //            isFirst = false
+        //
+        //        }
         
         path?.addLine(to: convertedPoint)
+        //        path?.addQuadCurve(to: convertedPoint, controlPoint: convertedPoint2)
         path?.move(to: convertedPoint)
         drawAnnotation(onPage: page, point: convertedPoint)
         
     }
     
-   public func gestureRecognizerEnded(_ location: CGPoint) {
+    func gestureRecognizerEnded(_ location: CGPoint, _ prevlocation: CGPoint) {
         guard let page = currentPage else { return }
         let convertedPoint = pdfView.convert(location, to: page)
+        let convertedPoint2 = pdfView.convert(prevlocation, to: page)
         // Erasing
         if drawingTool == .eraser {
             if undoAnnotation.count >= 1{
                 removeAnnotationUndo(point: convertedPoint, page: page)
+                removeAnnotationAtPoint(point: convertedPoint, page: page)
                 return
             }else {
                 removeAnnotationAtPoint(point: convertedPoint, page: page)
@@ -166,8 +191,22 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         
         // Drawing
         guard let _ = currentAnnotation else { return }
-        
+        //        if let prevPoint = prevPoint {
+        //            let midPoint = CGPoint(
+        //                x: (convertedPoint.x + prevPoint.x) / 2,
+        //                y: (convertedPoint.y + prevPoint.y) / 2)
+        //            if isFirst {
+        //                path?.addLine(to: convertedPoint)
+        //                path?.move(to: convertedPoint)
+        //            } else {
+        //                path?.addCurve(to: midPoint, controlPoint1: prevPoint, controlPoint2: convertedPoint)
+        //                path?.move(to: midPoint)
+        //            }
+        //            isFirst = false
+        //
+        //        }
         path?.addLine(to: convertedPoint)
+        //        path?.addQuadCurve(to: convertedPoint, controlPoint: convertedPoint2)
         path?.move(to: convertedPoint)
         
         drawAnnotation(onPage: page, point: convertedPoint)
@@ -176,7 +215,7 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         currentAnnotation = nil
     }
     
-    public func checkNumberOfTouches(numberofTouches: Int) {
+    func checkNumberOfTouches(numberofTouches: Int) {
         if numberofTouches > 1{
             //            pdfView.isUserInteractionEnabled = false
             //        } else if numberofTouches == 1 {
@@ -206,7 +245,7 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         }
     }
     
-    public func createAnnotation(path: UIBezierPath, page: PDFPage, point: CGPoint) -> DrawingAnnotation {
+    private func createAnnotation(path: UIBezierPath, page: PDFPage, point: CGPoint) -> DrawingAnnotation {
         let annotation = DrawingAnnotation(bounds: page.bounds(for: pdfView.displayBox), forType: .ink, withProperties: nil)
         let uuid = UUID().uuidString
         if(redoAnnotation.count > 0){
@@ -299,7 +338,7 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
     //    }
     
     
-    public func drawAnnotation(onPage: PDFPage, point: CGPoint) {
+    private func drawAnnotation(onPage: PDFPage, point: CGPoint) {
         guard let path = path else { return }
         
         if currentAnnotation == nil {
@@ -314,9 +353,7 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         //        forceRedraw(annotation: currentAnnotation!, onPage: onPage)
     }
     
-  
-    
-    public func removeAnnotationAtPoint(point: CGPoint, page: PDFPage) {
+    private func removeAnnotationAtPoint(point: CGPoint, page: PDFPage) {
         if let selectedAnnotation = page.annotationWithHitTest(at: point) {
             selectedAnnotation.page?.removeAnnotation(selectedAnnotation)
             print(selectedAnnotation)
@@ -324,7 +361,7 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         
     }
     
-    public func removeAnnotationUndo(point: CGPoint, page: PDFPage) {
+    private func removeAnnotationUndo(point: CGPoint, page: PDFPage) {
         if let selectedAnnotation = page.annotationWithHitTest(at: point) {
             guard let select = selectedAnnotation as? MyPDFAnnotaion else { return }
             if let index = undoAnnotation.firstIndex(of: select) {
@@ -345,7 +382,7 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
     //        onPage.addAnnotation(annotation)
     //    }
     
-   public func undoLatestStep (path: UIBezierPath, color: UIColor ,point: CGPoint,border: PDFBorder, page: PDFPage, alpha: CGFloat ,tool: Int) {
+    func undoLatestStep (path: UIBezierPath, color: UIColor ,point: CGPoint,border: PDFBorder, page: PDFPage, alpha: CGFloat ,tool: Int) {
         //        if(tool == 0){
         //            pathArrays.count - 1
         //            delegate?.undo(isUndo: pathArrays.count > 0)
@@ -385,7 +422,7 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         }
     }
     
-    public func undoLatestStep (annotation: MyPDFAnnotaion) {
+    func undoLatestStep (annotation: MyPDFAnnotaion) {
         if(canUndo()) {
             //            if annotation.type == "0" {
             //                if annotation.status?.contains("hide") == true {
@@ -410,11 +447,11 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
     
     
     
-   public func canUndo() -> Bool {
+    func canUndo() -> Bool {
         return undoAnnotation.count > 0
     }
     
-    public func redoLastestStep (path: UIBezierPath, color: UIColor ,point: CGPoint,border: PDFBorder, page: PDFPage, alpha: CGFloat, tool :Int ) {
+    func redoLastestStep (path: UIBezierPath, color: UIColor ,point: CGPoint,border: PDFBorder, page: PDFPage, alpha: CGFloat, tool :Int ) {
         if(canRedo()){
             let p = Path(path: path, color: color, point: point, border: border, page: page, alpha: alpha, tool: tool)
             self.pathArrays.append(p)
@@ -428,7 +465,7 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         }
     }
     
-   public func redoLastestStep (annotation: MyPDFAnnotaion) {
+    func redoLastestStep (annotation: MyPDFAnnotaion) {
         if(canRedo()){
             //            if annotation.type == "0" {
             //                undoAnnotation.append(annotation)
@@ -449,12 +486,12 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         
     }
     
-   public func canRedo() -> Bool {
+    func canRedo() -> Bool {
         return redoAnnotation.count > 0
     }
 }
 
-public class Path {
+class Path {
     var path : UIBezierPath
     var color : UIColor
     var point : CGPoint
@@ -474,7 +511,7 @@ public class Path {
     }
 }
 
-public class MyPDFAnnotaion : PDFAnnotation {
+class MyPDFAnnotaion : PDFAnnotation {
     open var uuid: String?
     open var status: String?
     open var fileNameCurrent: String?
