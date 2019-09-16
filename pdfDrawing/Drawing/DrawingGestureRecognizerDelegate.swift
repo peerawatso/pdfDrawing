@@ -15,9 +15,9 @@ import UIKit
     func checkNumberOfTouches(numberofTouches: Int)
 }
 
-class DrawingGestureRecognizer: UIGestureRecognizer {
+public class DrawingGestureRecognizer: UIGestureRecognizer {
     weak var drawingDelegate: DrawingGestureRecognizerDelegate?
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first,
             //            touch.type == .pencil, // Comment this line to test on simulator without Apple Pencil
             //            touch.type == .pencil,
@@ -39,7 +39,7 @@ class DrawingGestureRecognizer: UIGestureRecognizer {
         }
     }
     
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         state = .changed
         
         guard let location = touches.first?.location(in: self.view) else { return }
@@ -47,7 +47,7 @@ class DrawingGestureRecognizer: UIGestureRecognizer {
         drawingDelegate?.gestureRecognizerMoved?(location, prevlocation)
     }
     
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let location = touches.first?.location(in: self.view) else {
             state = .ended
             return
@@ -59,7 +59,7 @@ class DrawingGestureRecognizer: UIGestureRecognizer {
         state = .ended
     }
     
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent) {
+    override public func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent) {
         state = .failed
     }
 }

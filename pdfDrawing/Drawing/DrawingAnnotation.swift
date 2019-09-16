@@ -9,7 +9,7 @@
 import Foundation
 import PDFKit
 
-class DrawingAnnotation: MyPDFAnnotaion {
+public class DrawingAnnotation: MyPDFAnnotaion {
     public var path = UIBezierPath()
     
     func completed() {

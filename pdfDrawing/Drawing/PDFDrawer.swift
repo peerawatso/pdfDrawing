@@ -88,7 +88,7 @@ protocol PDFDrawerDelegate : class{
     //    func selectDB(page : PDFPage) -> [MyPDFAnnotaion]
 }
 
-class PDFDrawer {
+public class PDFDrawer {
     weak var pdfView: PDFView!
     private var path: UIBezierPath?
     var currentAnnotation : DrawingAnnotation?
