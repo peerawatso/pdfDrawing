@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc protocol DrawingGestureRecognizerDelegate: class {
+@objc public protocol DrawingGestureRecognizerDelegate: class {
     @objc optional func gestureRecognizerBegan(_ location: CGPoint, _ prevLocation: CGPoint)
     @objc optional func gestureRecognizerMoved(_ location: CGPoint, _ prevLocation: CGPoint)
     @objc optional func gestureRecognizerEnded(_ location: CGPoint, _ prevLocation: CGPoint)

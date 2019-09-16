@@ -10,7 +10,7 @@ import Foundation
 import PDFKit
 import SQLite3
 
-enum DrawingTool: Int {
+public enum DrawingTool: Int {
     case eraser = 0
     case pencil = 11
     case pen = 12
@@ -80,7 +80,7 @@ enum DrawingTool: Int {
     }
 }
 
-protocol PDFDrawerDelegate : class{
+public protocol PDFDrawerDelegate : class{
     func undo(isUndo : Bool)
     func redo(isRedo : Bool)
     func checkSelect()
@@ -123,7 +123,7 @@ public class PDFDrawer {
 }
 
 extension PDFDrawer: DrawingGestureRecognizerDelegate {
-    func gestureRecognizerBegan(_ location: CGPoint, _ prevLocation: CGPoint) {
+    public func gestureRecognizerBegan(_ location: CGPoint, _ prevLocation: CGPoint) {
         pdfView.isUserInteractionEnabled = true
         guard let page = pdfView.page(for: location, nearest: true) else { return }
         currentPage = page
@@ -136,7 +136,7 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         delegate?.checkSelect()
     }
     
-    func gestureRecognizerMoved(_ location: CGPoint, _ prevLocation: CGPoint) {
+    public func gestureRecognizerMoved(_ location: CGPoint, _ prevLocation: CGPoint) {
         guard let page = currentPage else { return }
         let convertedPoint = pdfView.convert(location, to: page)
         let convertedPoint2 = pdfView.convert(prevLocation, to: page)
@@ -173,7 +173,7 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         
     }
     
-    func gestureRecognizerEnded(_ location: CGPoint, _ prevlocation: CGPoint) {
+    public func gestureRecognizerEnded(_ location: CGPoint, _ prevlocation: CGPoint) {
         guard let page = currentPage else { return }
         let convertedPoint = pdfView.convert(location, to: page)
         let convertedPoint2 = pdfView.convert(prevlocation, to: page)
@@ -215,7 +215,7 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         currentAnnotation = nil
     }
     
-    func checkNumberOfTouches(numberofTouches: Int) {
+    public func checkNumberOfTouches(numberofTouches: Int) {
         if numberofTouches > 1{
             //            pdfView.isUserInteractionEnabled = false
             //        } else if numberofTouches == 1 {
