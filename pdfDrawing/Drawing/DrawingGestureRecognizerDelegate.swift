@@ -16,7 +16,7 @@ import UIKit
 }
 
 public class DrawingGestureRecognizer: UIGestureRecognizer {
-    weak var drawingDelegate: DrawingGestureRecognizerDelegate?
+    public weak var drawingDelegate: DrawingGestureRecognizerDelegate?
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first,
             //            touch.type == .pencil, // Comment this line to test on simulator without Apple Pencil
