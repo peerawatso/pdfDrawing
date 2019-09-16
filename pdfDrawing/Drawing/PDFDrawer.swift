@@ -141,7 +141,7 @@ public class PDFDrawer {
     var pagePDF : PDFPage?
     var alpha : CGFloat?
     var tool : Int?
-    var urlPath : URL? = nil
+    public var urlPath : URL? = nil
     var db: OpaquePointer?
     var pdfDocument: PDFDocument?
     var currentAnnotation2: MyPDFAnnotaion?
@@ -450,7 +450,7 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         }
     }
     
-    func undoLatestStep (annotation: MyPDFAnnotaion) {
+    public func undoLatestStep (annotation: MyPDFAnnotaion) {
         if(canUndo()) {
             //            if annotation.type == "0" {
             //                if annotation.status?.contains("hide") == true {
@@ -475,7 +475,7 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
     
     
     
-    func canUndo() -> Bool {
+    public func canUndo() -> Bool {
         return undoAnnotation.count > 0
     }
     
@@ -489,7 +489,7 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         }
     }
     
-    func redoLastestStep (annotation: MyPDFAnnotaion) {
+    public func redoLastestStep (annotation: MyPDFAnnotaion) {
         if(canRedo()){
             //            if annotation.type == "0" {
             //                undoAnnotation.append(annotation)
@@ -510,7 +510,7 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         
     }
     
-    func canRedo() -> Bool {
+    public func canRedo() -> Bool {
         return redoAnnotation.count > 0
     }
 }
