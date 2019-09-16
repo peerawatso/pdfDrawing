@@ -91,7 +91,7 @@ public protocol PDFDrawerDelegate : class{
 public class PDFDrawer {
     public init() {
         weak var pdfView: PDFView!
-        private var path: UIBezierPath?
+        var path: UIBezierPath?
         var currentAnnotation : DrawingAnnotation?
         var currentAnnotation1 : DrawingAnnotation?
         var currentPoint : CGPoint?
@@ -105,7 +105,7 @@ public class PDFDrawer {
         var redoAnnotation : [MyPDFAnnotaion] = []
         var historyAnnotation : [MyPDFAnnotaion] = []
         weak var delegate : PDFDrawerDelegate? = .none
-        open var fileName : String?
+        var fileName : String?
         var point : CGPoint?
         var border : PDFBorder?
         var page : PDFPage?
@@ -121,6 +121,37 @@ public class PDFDrawer {
         var prevPoint2 : CGPoint?
         var isFirst = true
     }
+    weak var pdfView: PDFView!
+    private var path: UIBezierPath?
+    var currentAnnotation : DrawingAnnotation?
+    var currentAnnotation1 : DrawingAnnotation?
+    var currentPoint : CGPoint?
+    var currentPage: PDFPage?
+    var currentPage1: PDFPage?
+    var color = UIColor.black // default color is black
+    var drawingTool = DrawingTool.pen
+    var pathArrays : [Path] = []
+    var bufferArrays : [Path] = []
+    var undoAnnotation : [MyPDFAnnotaion] = []
+    var redoAnnotation : [MyPDFAnnotaion] = []
+    var historyAnnotation : [MyPDFAnnotaion] = []
+    weak var delegate : PDFDrawerDelegate? = .none
+    open var fileName : String?
+    var point : CGPoint?
+    var border : PDFBorder?
+    var page : PDFPage?
+    var pagePDF : PDFPage?
+    var alpha : CGFloat?
+    var tool : Int?
+    var urlPath : URL? = nil
+    var db: OpaquePointer?
+    var pdfDocument: PDFDocument?
+    var currentAnnotation2: MyPDFAnnotaion?
+    var Addannotations : PDFAnnotation?
+    var prevPoint : CGPoint?
+    var prevPoint2 : CGPoint?
+    var isFirst = true
+    
 }
 
 extension PDFDrawer: DrawingGestureRecognizerDelegate {
