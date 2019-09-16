@@ -16,7 +16,7 @@ public class DrawingAnnotation: MyPDFAnnotaion {
         add(path)
     }
     
-    override func draw(with box: PDFDisplayBox, in context: CGContext) {
+    override public func draw(with box: PDFDisplayBox, in context: CGContext) {
         super.draw(with: box, in: context)
         let pathCopy = path.copy() as! UIBezierPath
         UIGraphicsPushContext(context)

@@ -511,7 +511,7 @@ class Path {
     }
 }
 
-class MyPDFAnnotaion : PDFAnnotation {
+public class MyPDFAnnotaion : PDFAnnotation {
     open var uuid: String?
     open var status: String?
     open var fileNameCurrent: String?
