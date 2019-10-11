@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.license      = 'DSolution'
   spec.author       = { "DSolution Macbook" => "thetong1911.2@gmail.com" }
   spec.source       = { :git => "https://github.com/peerawatso/pdfDrawing.git", :tag => spec.version.to_s}
-  spec.ios.deployment_target = '12.4'
+  spec.ios.deployment_target = '12.2'
   spec.framework = 'UIKit', 'PDFKit'
   spec.default_subspec = 'All'
 
