@@ -120,6 +120,7 @@ public class PDFDrawer {
         var prevPoint : CGPoint?
         var prevPoint2 : CGPoint?
         var isFirst = true
+        var containerView : UIView?
     }
     weak public var pdfView: PDFView!
     public var path: UIBezierPath?
@@ -149,6 +150,8 @@ public class PDFDrawer {
     var prevPoint : CGPoint?
     var prevPoint2 : CGPoint?
     var isFirst = true
+    public var containerView : UIView?
+
     
 }
 
@@ -238,8 +241,14 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         path?.addLine(to: convertedPoint)
         //        path?.addQuadCurve(to: convertedPoint, controlPoint: convertedPoint2)
         path?.move(to: convertedPoint)
-        
+        containerView?.backgroundColor = UIColor.clear
+        containerView?.contentMode = .redraw
+        containerView?.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        containerView?.autoresizesSubviews = true
+        guard let view = containerView else { return }
+        pdfView.addSubview(view)
         drawAnnotation(onPage: page, point: convertedPoint)
+        
         
         currentAnnotation?.completed()
         currentAnnotation = nil
