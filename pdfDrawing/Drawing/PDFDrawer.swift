@@ -243,10 +243,10 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         path?.move(to: convertedPoint)
 //        containerView?.backgroundColor = UIColor.clear
 //        containerView?.contentMode = .redraw
-        containerView?.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        containerView?.autoresizesSubviews = true
-        guard let view = containerView else { return }
-        pdfView.addSubview(view)
+//        containerView?.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+//        containerView?.autoresizesSubviews = true
+//        guard let view = containerView else { return }
+//        pdfView.addSubview(view)
         drawAnnotation(onPage: page, point: convertedPoint)
         
         
@@ -395,7 +395,7 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
     private func removeAnnotationAtPoint(point: CGPoint, page: PDFPage) {
         if let selectedAnnotation = page.annotationWithHitTest(at: point) {
             selectedAnnotation.page?.removeAnnotation(selectedAnnotation)
-            pdfView.removeFromSuperview()
+//            pdfView.removeFromSuperview()
             print(selectedAnnotation)
         }
         
@@ -406,13 +406,13 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
             guard let select = selectedAnnotation as? MyPDFAnnotaion else { return }
             if let index = undoAnnotation.firstIndex(of: select) {
                 let undoEraser = undoAnnotation.remove(at: index)
-                pdfView.removeFromSuperview()
+//                pdfView.removeFromSuperview()
 
                 selectedAnnotation.page?.removeAnnotation(selectedAnnotation)
                 print(selectedAnnotation)
                 delegate?.undo(isUndo: undoAnnotation.count > 0)
             } else {
-                pdfView.removeFromSuperview()
+//                pdfView.removeFromSuperview()
                 selectedAnnotation.page?.removeAnnotation(selectedAnnotation)
                 //                print(selectedAnnotation)
             }
