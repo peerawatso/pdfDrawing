@@ -30,12 +30,13 @@ public class DrawingGestureRecognizer: UIGestureRecognizer {
             let location = touch.location(in: self.view)
             let prevlocation = touch.previousLocation(in: self.view)
             drawingDelegate?.gestureRecognizerBegan?(location, prevlocation)
-        } else if let numbersOfTouches = event?.allTouches?.count,
-            numbersOfTouches > 1 {
-            drawingDelegate?.checkNumberOfTouches(numberofTouches: numbersOfTouches)
-            state = .failed
-        } else {
-            state = .failed
+            
+//        } else if let numbersOfTouches = event?.allTouches?.count,
+//            numbersOfTouches > 1 {
+//            drawingDelegate?.checkNumberOfTouches(numberofTouches: numbersOfTouches)
+//            state = .failed
+//        } else {
+//            state = .failed
         }
     }
     
