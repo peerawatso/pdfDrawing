@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>E-MeetingNote.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>bitcode</key>
+			<true/>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>F9A3E926EDB2B14387B1FA3002DE09B16497102A</string>
+				<key>dateExpires</key>
+				<string>14/7/2563 BE</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>bitcode</key>
+					<true/>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>F9A3E926EDB2B14387B1FA3002DE09B16497102A</string>
+						<key>dateExpires</key>
+						<string>14/7/2563 BE</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>Alamofire.framework</string>
+					<key>symbols</key>
+					<true/>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>7QP7U63B4K</string>
+						<key>name</key>
+						<string>D SOLUTION DOT COM COMPANY LIMITED</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>bitcode</key>
+					<true/>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>F9A3E926EDB2B14387B1FA3002DE09B16497102A</string>
+						<key>dateExpires</key>
+						<string>14/7/2563 BE</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>ChromaColorPicker.framework</string>
+					<key>symbols</key>
+					<true/>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>7QP7U63B4K</string>
+						<key>name</key>
+						<string>D SOLUTION DOT COM COMPANY LIMITED</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>bitcode</key>
+					<true/>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>F9A3E926EDB2B14387B1FA3002DE09B16497102A</string>
+						<key>dateExpires</key>
+						<string>14/7/2563 BE</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>ColorPickTip.framework</string>
+					<key>symbols</key>
+					<true/>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>7QP7U63B4K</string>
+						<key>name</key>
+						<string>D SOLUTION DOT COM COMPANY LIMITED</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>bitcode</key>
+					<true/>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>F9A3E926EDB2B14387B1FA3002DE09B16497102A</string>
+						<key>dateExpires</key>
+						<string>14/7/2563 BE</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>MBProgressHUD.framework</string>
+					<key>symbols</key>
+					<true/>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>7QP7U63B4K</string>
+						<key>name</key>
+						<string>D SOLUTION DOT COM COMPANY LIMITED</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>bitcode</key>
+					<true/>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>F9A3E926EDB2B14387B1FA3002DE09B16497102A</string>
+						<key>dateExpires</key>
+						<string>14/7/2563 BE</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>ObjectMapper.framework</string>
+					<key>symbols</key>
+					<true/>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>7QP7U63B4K</string>
+						<key>name</key>
+						<string>D SOLUTION DOT COM COMPANY LIMITED</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>bitcode</key>
+					<true/>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>F9A3E926EDB2B14387B1FA3002DE09B16497102A</string>
+						<key>dateExpires</key>
+						<string>14/7/2563 BE</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>pdfDrawing.framework</string>
+					<key>symbols</key>
+					<true/>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>7QP7U63B4K</string>
+						<key>name</key>
+						<string>D SOLUTION DOT COM COMPANY LIMITED</string>
+					</dict>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>7QP7U63B4K.inet.develop.dsolution.E-MeetingNote</string>
+				<key>beta-reports-active</key>
+				<true/>
+				<key>com.apple.developer.team-identifier</key>
+				<string>7QP7U63B4K</string>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>E-MeetingNote.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>47748981-c40d-4b14-87bd-5c09795cfe97</string>
+				<key>name</key>
+				<string>iOS Team Store Provisioning Profile: inet.develop.dsolution.E-MeetingNote</string>
+			</dict>
+			<key>symbols</key>
+			<true/>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>7QP7U63B4K</string>
+				<key>name</key>
+				<string>D SOLUTION DOT COM COMPANY LIMITED</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

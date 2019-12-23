@@ -1,0 +1,473 @@
+2019-12-12 06:22:34 +0000  Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x7fcc5580f2e0; archive(resolved)='<IDEArchive: 0x7fcc5535b650>', distributionTask(resolved)='2', distributionDestination(resolved)='2', distributionMethod(resolved)='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fcc5198ced0>', team(resolved)='<IDEProvisioningDisambiguatableBasicTeam: 0x7fcc56826bc0; teamID='7QP7U63B4K', teamName='D SOLUTION DOT COM COMPANY LIMITED', teamType='Company', username='ta_na_korn@hotmail.com', isFreeProvisioningTeam='0'>'>
+	Chain (13, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x7fcc5580f2e0; archive = '<IDEArchive: 0x7fcc5535b650>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fcc5198ced0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fcc56826bc0; teamID='7QP7U63B4K', teamName='D SOLUTION DOT COM COMPANY LIMITED', teamType='Company', username='ta_na_korn@hotmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionProcessingPipelineContext: 0x7fcc55808ad0; archive = '<IDEArchive: 0x7fcc5535b650>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fcc5198ced0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fcc56826bc0; teamID='7QP7U63B4K', teamName='D SOLUTION DOT COM COMPANY LIMITED', teamType='Company', username='ta_na_korn@hotmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fcc5582fd10; archive = '<IDEArchive: 0x7fcc5535b650>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fcc5198ced0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fcc56826bc0; teamID='7QP7U63B4K', teamName='D SOLUTION DOT COM COMPANY LIMITED', teamType='Company', username='ta_na_korn@hotmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fcc568c6180; archive = '<IDEArchive: 0x7fcc5535b650>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fcc5198ced0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fcc56826bc0; teamID='7QP7U63B4K', teamName='D SOLUTION DOT COM COMPANY LIMITED', teamType='Company', username='ta_na_korn@hotmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fcc56cdd1a0; archive = '<IDEArchive: 0x7fcc5535b650>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fcc5198ced0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fcc56826bc0; teamID='7QP7U63B4K', teamName='D SOLUTION DOT COM COMPANY LIMITED', teamType='Company', username='ta_na_korn@hotmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fcc56989b90; archive = '<IDEArchive: 0x7fcc5535b650>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fcc5198ced0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fcc56826bc0; teamID='7QP7U63B4K', teamName='D SOLUTION DOT COM COMPANY LIMITED', teamType='Company', username='ta_na_korn@hotmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fcc54dcb1b0; archive = '<IDEArchive: 0x7fcc5535b650>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fcc5198ced0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fcc56826bc0; teamID='7QP7U63B4K', teamName='D SOLUTION DOT COM COMPANY LIMITED', teamType='Company', username='ta_na_korn@hotmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fcc568ba1b0; archive = '<IDEArchive: 0x7fcc5535b650>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fcc5198ced0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fcc56826bc0; teamID='7QP7U63B4K', teamName='D SOLUTION DOT COM COMPANY LIMITED', teamType='Company', username='ta_na_korn@hotmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fcc56893d00; archive = '<IDEArchive: 0x7fcc5535b650>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fcc5198ced0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fcc56826bc0; teamID='7QP7U63B4K', teamName='D SOLUTION DOT COM COMPANY LIMITED', teamType='Company', username='ta_na_korn@hotmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fcc56916250; archive = '<IDEArchive: 0x7fcc5535b650>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fcc5198ced0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fcc56826bc0; teamID='7QP7U63B4K', teamName='D SOLUTION DOT COM COMPANY LIMITED', teamType='Company', username='ta_na_korn@hotmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fcc53249b20; archive = '<IDEArchive: 0x7fcc5535b650>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fcc5198ced0>', team='(null)'>
+	<IDEDistributionContext: 0x7fcc54db68d0; archive = '<IDEArchive: 0x7fcc5535b650>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fcc5198ced0>', team='(null)'>
+	<IDEDistributionContext: 0x7fcc532ed080; archive = '<IDEArchive: 0x7fcc5535b650>', distributionMethod='(null)', team='(null)'>
+</IDEDistributionProcessingPipelineContext: 0x7fcc5580f2e0>
+2019-12-12 06:22:34 +0000  Processing step: IDEDistributionCreateDestRootStep
+2019-12-12 06:22:34 +0000  Processing step: IDEDistributionCopyItemStep
+2019-12-12 06:22:34 +0000  Running /usr/bin/ditto '-V' '/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app' '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/Payload/E-MeetingNote.app'
+2019-12-12 06:22:34 +0000  >>> Copying /Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app 
+2019-12-12 06:22:34 +0000  copying file ./_CodeSignature/CodeResources ... 
+2019-12-12 06:22:34 +0000  14217 bytes for ./_CodeSignature/CodeResources
+2019-12-12 06:22:34 +0000  copying file ./ManageNoteViewCell.nib ... 
+2019-12-12 06:22:34 +0000  3053 bytes for ./ManageNoteViewCell.nib
+2019-12-12 06:22:34 +0000  copying file ./ToolView.nib ... 
+3651 bytes for ./ToolView.nib
+copying file ./AppIcon60x60@2x.png ... 
+2019-12-12 06:22:34 +0000  11492 bytes for ./AppIcon60x60@2x.png
+2019-12-12 06:22:34 +0000  copying file ./E-MeetingNote ... 
+2019-12-12 06:22:34 +0000  2735696 bytes for ./E-MeetingNote
+2019-12-12 06:22:34 +0000  copying file ./Base.lproj/Main.storyboardc/JwI-0q-ilr-view-8YU-WC-zul.nib ... 
+2019-12-12 06:22:34 +0000  1839 bytes for ./Base.lproj/Main.storyboardc/JwI-0q-ilr-view-8YU-WC-zul.nib
+copying file ./Base.lproj/Main.storyboardc/search.nib ... 
+2019-12-12 06:22:34 +0000  1470 bytes for ./Base.lproj/Main.storyboardc/search.nib
+2019-12-12 06:22:34 +0000  copying file ./Base.lproj/Main.storyboardc/rIT-Ug-h3y-view-dxz-z1-6fs.nib ... 
+3348 bytes for ./Base.lproj/Main.storyboardc/rIT-Ug-h3y-view-dxz-z1-6fs.nib
+copying file ./Base.lproj/Main.storyboardc/highlightColorPick.nib ... 
+1052 bytes for ./Base.lproj/Main.storyboardc/highlightColorPick.nib
+copying file ./Base.lproj/Main.storyboardc/manageNote.nib ... 
+2038 bytes for ./Base.lproj/Main.storyboardc/manageNote.nib
+2019-12-12 06:22:34 +0000  copying file ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib ... 
+2019-12-12 06:22:34 +0000  5166 bytes for ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib
+copying file ./Base.lproj/Main.storyboardc/Hbd-4a-nrU-view-Et1-bB-Bil.nib ... 
+2019-12-12 06:22:34 +0000  3808 bytes for ./Base.lproj/Main.storyboardc/Hbd-4a-nrU-view-Et1-bB-Bil.nib
+2019-12-12 06:22:34 +0000  copying file ./Base.lproj/Main.storyboardc/vc.nib ... 
+2019-12-12 06:22:34 +0000  2943 bytes for ./Base.lproj/Main.storyboardc/vc.nib
+2019-12-12 06:22:34 +0000  copying file ./Base.lproj/Main.storyboardc/colorpick.nib ... 
+2019-12-12 06:22:34 +0000  1034 bytes for ./Base.lproj/Main.storyboardc/colorpick.nib
+2019-12-12 06:22:34 +0000  copying file ./Base.lproj/Main.storyboardc/D6l-Ti-8kR-view-7Sk-R7-gGd.nib ... 
+2019-12-12 06:22:34 +0000  5119 bytes for ./Base.lproj/Main.storyboardc/D6l-Ti-8kR-view-7Sk-R7-gGd.nib
+2019-12-12 06:22:34 +0000  copying file ./Base.lproj/Main.storyboardc/gM2-i2-NY4-view-DbO-TN-nt6.nib ... 
+2019-12-12 06:22:34 +0000  3303 bytes for ./Base.lproj/Main.storyboardc/gM2-i2-NY4-view-DbO-TN-nt6.nib
+2019-12-12 06:22:34 +0000  copying file ./Base.lproj/Main.storyboardc/addNote.nib ... 
+2019-12-12 06:22:34 +0000  1587 bytes for ./Base.lproj/Main.storyboardc/addNote.nib
+copying file ./Base.lproj/Main.storyboardc/Info.plist ... 
+2019-12-12 06:22:34 +0000  441 bytes for ./Base.lproj/Main.storyboardc/Info.plist
+2019-12-12 06:22:34 +0000  copying file ./Base.lproj/Main.storyboardc/UINavigationController-Zdr-Ub-gaC.nib ... 
+2019-12-12 06:22:34 +0000  3671 bytes for ./Base.lproj/Main.storyboardc/UINavigationController-Zdr-Ub-gaC.nib
+2019-12-12 06:22:34 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib ... 
+2019-12-12 06:22:34 +0000  1173 bytes for ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
+2019-12-12 06:22:34 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib ... 
+2019-12-12 06:22:34 +0000  896 bytes for ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
+copying file ./Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+2019-12-12 06:22:34 +0000  258 bytes for ./Base.lproj/LaunchScreen.storyboardc/Info.plist
+2019-12-12 06:22:34 +0000  copying file ./Assets.car ... 
+2019-12-12 06:22:34 +0000  880224 bytes for ./Assets.car
+2019-12-12 06:22:34 +0000  copying file ./AppIcon76x76@2x~ipad.png ... 
+2019-12-12 06:22:34 +0000  16179 bytes for ./AppIcon76x76@2x~ipad.png
+2019-12-12 06:22:34 +0000  copying file ./ThumbnailGridCell.nib ... 
+2019-12-12 06:22:34 +0000  2989 bytes for ./ThumbnailGridCell.nib
+2019-12-12 06:22:34 +0000  copying file ./SearchResultsCell.nib ... 
+2019-12-12 06:22:34 +0000  3649 bytes for ./SearchResultsCell.nib
+2019-12-12 06:22:34 +0000  copying file ./ColorPickViewCell.nib ... 
+2019-12-12 06:22:34 +0000  2391 bytes for ./ColorPickViewCell.nib
+2019-12-12 06:22:34 +0000  copying file ./Frameworks/ChromaColorPicker.framework/_CodeSignature/CodeResources ... 
+2019-12-12 06:22:34 +0000  1798 bytes for ./Frameworks/ChromaColorPicker.framework/_CodeSignature/CodeResources
+copying file ./Frameworks/ChromaColorPicker.framework/ChromaColorPicker ... 
+2019-12-12 06:22:34 +0000  856208 bytes for ./Frameworks/ChromaColorPicker.framework/ChromaColorPicker
+2019-12-12 06:22:34 +0000  copying file ./Frameworks/ChromaColorPicker.framework/Info.plist ... 
+2019-12-12 06:22:34 +0000  759 bytes for ./Frameworks/ChromaColorPicker.framework/Info.plist
+2019-12-12 06:22:34 +0000  copying file ./Frameworks/MBProgressHUD.framework/_CodeSignature/CodeResources ... 
+2019-12-12 06:22:34 +0000  1798 bytes for ./Frameworks/MBProgressHUD.framework/_CodeSignature/CodeResources
+2019-12-12 06:22:34 +0000  copying file ./Frameworks/MBProgressHUD.framework/MBProgressHUD ... 
+2019-12-12 06:22:34 +0000  497008 bytes for ./Frameworks/MBProgressHUD.framework/MBProgressHUD
+2019-12-12 06:22:34 +0000  copying file ./Frameworks/MBProgressHUD.framework/Info.plist ... 
+2019-12-12 06:22:34 +0000  749 bytes for ./Frameworks/MBProgressHUD.framework/Info.plist
+2019-12-12 06:22:34 +0000  copying file ./Frameworks/Alamofire.framework/_CodeSignature/CodeResources ... 
+2019-12-12 06:22:34 +0000  1798 bytes for ./Frameworks/Alamofire.framework/_CodeSignature/CodeResources
+2019-12-12 06:22:34 +0000  copying file ./Frameworks/Alamofire.framework/Alamofire ... 
+2019-12-12 06:22:34 +0000  3974272 bytes for ./Frameworks/Alamofire.framework/Alamofire
+2019-12-12 06:22:34 +0000  copying file ./Frameworks/Alamofire.framework/Info.plist ... 
+741 bytes for ./Frameworks/Alamofire.framework/Info.plist
+copying file ./Frameworks/ObjectMapper.framework/_CodeSignature/CodeResources ... 
+1798 bytes for ./Frameworks/ObjectMapper.framework/_CodeSignature/CodeResources
+copying file ./Frameworks/ObjectMapper.framework/ObjectMapper ... 
+2019-12-12 06:22:34 +0000  1543120 bytes for ./Frameworks/ObjectMapper.framework/ObjectMapper
+2019-12-12 06:22:34 +0000  copying file ./Frameworks/ObjectMapper.framework/Info.plist ... 
+747 bytes for ./Frameworks/ObjectMapper.framework/Info.plist
+copying file ./Frameworks/pdfDrawing.framework/_CodeSignature/CodeResources ... 
+2019-12-12 06:22:34 +0000  1798 bytes for ./Frameworks/pdfDrawing.framework/_CodeSignature/CodeResources
+2019-12-12 06:22:34 +0000  copying file ./Frameworks/pdfDrawing.framework/pdfDrawing ... 
+2019-12-12 06:22:34 +0000  557296 bytes for ./Frameworks/pdfDrawing.framework/pdfDrawing
+copying file ./Frameworks/pdfDrawing.framework/Info.plist ... 
+2019-12-12 06:22:34 +0000  791 bytes for ./Frameworks/pdfDrawing.framework/Info.plist
+2019-12-12 06:22:34 +0000  copying file ./Frameworks/ColorPickTip.framework/_CodeSignature/CodeResources ... 
+2019-12-12 06:22:34 +0000  1798 bytes for ./Frameworks/ColorPickTip.framework/_CodeSignature/CodeResources
+2019-12-12 06:22:34 +0000  copying file ./Frameworks/ColorPickTip.framework/ColorPickTip ... 
+2019-12-12 06:22:34 +0000  374496 bytes for ./Frameworks/ColorPickTip.framework/ColorPickTip
+copying file ./Frameworks/ColorPickTip.framework/Info.plist ... 
+2019-12-12 06:22:34 +0000  747 bytes for ./Frameworks/ColorPickTip.framework/Info.plist
+2019-12-12 06:22:34 +0000  copying file ./embedded.mobileprovision ... 
+2019-12-12 06:22:34 +0000  10673 bytes for ./embedded.mobileprovision
+2019-12-12 06:22:34 +0000  copying file ./Info.plist ... 
+2019-12-12 06:22:34 +0000  2168 bytes for ./Info.plist
+2019-12-12 06:22:34 +0000  copying file ./PkgInfo ... 
+2019-12-12 06:22:34 +0000  8 bytes for ./PkgInfo
+2019-12-12 06:22:34 +0000  copying file ./SwitchAlertAction.nib ... 
+2019-12-12 06:22:34 +0000  2704 bytes for ./SwitchAlertAction.nib
+2019-12-12 06:22:34 +0000  /usr/bin/ditto exited with 0
+2019-12-12 06:22:34 +0000  Processing step: IDEDistributionEmbedProfileStep
+2019-12-12 06:22:34 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fcc54eb94a0; bundleID='org.cocoapods.Alamofire', path='<DVTFilePath:0x7fcc5685efa0:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/Alamofire.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fcc51342580; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fcc4fd6f060; name='Apple Development: Tanakorn Chumprasert (FB56883F6U)', hash='F29BAC07247DF3B031DB3606C4D64B418DB2D914', serialNumber='262349B2A7E903F5', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-10-31 08:26:31 +0000''>', entitlements='(null)', teamID='7QP7U63B4K', identifier='org.cocoapods.Alamofire', executablePath='<DVTFilePath:0x7fcc54ad90e0:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/Alamofire.framework/Alamofire'>', hardenedRuntime='0'>'>
+2019-12-12 06:22:34 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fcc569112e0; bundleID='org.cocoapods.ChromaColorPicker', path='<DVTFilePath:0x7fcc51f59d40:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/ChromaColorPicker.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fcc54d671d0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fcc4fd6f060; name='Apple Development: Tanakorn Chumprasert (FB56883F6U)', hash='F29BAC07247DF3B031DB3606C4D64B418DB2D914', serialNumber='262349B2A7E903F5', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-10-31 08:26:31 +0000''>', entitlements='(null)', teamID='7QP7U63B4K', identifier='org.cocoapods.ChromaColorPicker', executablePath='<DVTFilePath:0x7fcc56948970:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/ChromaColorPicker.framework/ChromaColorPicker'>', hardenedRuntime='0'>'>
+2019-12-12 06:22:34 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fcc5688fea0; bundleID='org.cocoapods.ColorPickTip', path='<DVTFilePath:0x7fcc54dba3b0:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/ColorPickTip.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fcc569285d0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fcc55368620; name='Apple Development: Tanakorn Chumprasert (FB56883F6U)', hash='F29BAC07247DF3B031DB3606C4D64B418DB2D914', serialNumber='262349B2A7E903F5', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-10-31 08:26:31 +0000''>', entitlements='(null)', teamID='7QP7U63B4K', identifier='org.cocoapods.ColorPickTip', executablePath='<DVTFilePath:0x7fcc56b4b150:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/ColorPickTip.framework/ColorPickTip'>', hardenedRuntime='0'>'>
+2019-12-12 06:22:34 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fcc53aaae80; bundleID='org.cocoapods.MBProgressHUD', path='<DVTFilePath:0x7fcc56851770:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/MBProgressHUD.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fcc4b9ac9c0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fcc55368620; name='Apple Development: Tanakorn Chumprasert (FB56883F6U)', hash='F29BAC07247DF3B031DB3606C4D64B418DB2D914', serialNumber='262349B2A7E903F5', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-10-31 08:26:31 +0000''>', entitlements='(null)', teamID='7QP7U63B4K', identifier='org.cocoapods.MBProgressHUD', executablePath='<DVTFilePath:0x7fcc56946e80:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/MBProgressHUD.framework/MBProgressHUD'>', hardenedRuntime='0'>'>
+2019-12-12 06:22:34 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fcc54cd4450; bundleID='org.cocoapods.ObjectMapper', path='<DVTFilePath:0x7fcc5536e780:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/ObjectMapper.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fcc532d7c30; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fcc4fd6f060; name='Apple Development: Tanakorn Chumprasert (FB56883F6U)', hash='F29BAC07247DF3B031DB3606C4D64B418DB2D914', serialNumber='262349B2A7E903F5', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-10-31 08:26:31 +0000''>', entitlements='(null)', teamID='7QP7U63B4K', identifier='org.cocoapods.ObjectMapper', executablePath='<DVTFilePath:0x7fcc53bda0f0:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/ObjectMapper.framework/ObjectMapper'>', hardenedRuntime='0'>'>
+2019-12-12 06:22:34 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fcc568d4920; bundleID='org.cocoapods.pdfDrawing', path='<DVTFilePath:0x7fcc53a02fd0:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/pdfDrawing.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fcc5684ac20; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fcc4fd6f060; name='Apple Development: Tanakorn Chumprasert (FB56883F6U)', hash='F29BAC07247DF3B031DB3606C4D64B418DB2D914', serialNumber='262349B2A7E903F5', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-10-31 08:26:31 +0000''>', entitlements='(null)', teamID='7QP7U63B4K', identifier='org.cocoapods.pdfDrawing', executablePath='<DVTFilePath:0x7fcc4fd7c720:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/pdfDrawing.framework/pdfDrawing'>', hardenedRuntime='0'>'>
+2019-12-12 06:22:34 +0000  Processing step: IDEDistributionItemRemovalStep
+2019-12-12 06:22:34 +0000  Processing step: IDEDistributionAppThinningPlistStep
+2019-12-12 06:22:34 +0000  Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2019-12-12 06:22:34 +0000  Processing step: IDEDistributionCompileBitcodeStep
+2019-12-12 06:22:34 +0000  Skipping step: IDEDistributionCompileBitcodeStep because it said so
+2019-12-12 06:22:34 +0000  Processing step: IDEDistributionCodeSlimmingStep
+2019-12-12 06:22:34 +0000  Processing step: IDEDistributionCopyBCSymbolMapsStep
+2019-12-12 06:22:34 +0000  Running /usr/bin/ditto '-V' '/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/BCSymbolMaps/021C965A-B117-37D6-9387-AD0FD3BD296B.bcsymbolmap' '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/BCSymbolMaps/021C965A-B117-37D6-9387-AD0FD3BD296B.bcsymbolmap'
+2019-12-12 06:22:34 +0000  >>> Copying /Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/BCSymbolMaps/021C965A-B117-37D6-9387-AD0FD3BD296B.bcsymbolmap 
+copying file ./021C965A-B117-37D6-9387-AD0FD3BD296B.bcsymbolmap ... 
+2019-12-12 06:22:34 +0000  350962 bytes for ./021C965A-B117-37D6-9387-AD0FD3BD296B.bcsymbolmap
+2019-12-12 06:22:34 +0000  /usr/bin/ditto exited with 0
+2019-12-12 06:22:34 +0000  Running /usr/bin/ditto '-V' '/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/BCSymbolMaps/F5399DEC-600A-36CD-A6DB-45E2C9D2FD64.bcsymbolmap' '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/BCSymbolMaps/F5399DEC-600A-36CD-A6DB-45E2C9D2FD64.bcsymbolmap'
+2019-12-12 06:22:34 +0000  >>> Copying /Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/BCSymbolMaps/F5399DEC-600A-36CD-A6DB-45E2C9D2FD64.bcsymbolmap 
+copying file ./F5399DEC-600A-36CD-A6DB-45E2C9D2FD64.bcsymbolmap ... 
+2019-12-12 06:22:34 +0000  50911 bytes for ./F5399DEC-600A-36CD-A6DB-45E2C9D2FD64.bcsymbolmap
+2019-12-12 06:22:34 +0000  /usr/bin/ditto exited with 0
+2019-12-12 06:22:34 +0000  Running /usr/bin/ditto '-V' '/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/BCSymbolMaps/793E13E7-CD89-3C84-87A0-2466587EB790.bcsymbolmap' '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/BCSymbolMaps/793E13E7-CD89-3C84-87A0-2466587EB790.bcsymbolmap'
+2019-12-12 06:22:34 +0000  >>> Copying /Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/BCSymbolMaps/793E13E7-CD89-3C84-87A0-2466587EB790.bcsymbolmap 
+2019-12-12 06:22:34 +0000  copying file ./793E13E7-CD89-3C84-87A0-2466587EB790.bcsymbolmap ... 
+2019-12-12 06:22:34 +0000  35117 bytes for ./793E13E7-CD89-3C84-87A0-2466587EB790.bcsymbolmap
+2019-12-12 06:22:34 +0000  /usr/bin/ditto exited with 0
+2019-12-12 06:22:34 +0000  Running /usr/bin/ditto '-V' '/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/BCSymbolMaps/AE2953B3-86E3-3253-B723-9EC1AA34093C.bcsymbolmap' '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/BCSymbolMaps/AE2953B3-86E3-3253-B723-9EC1AA34093C.bcsymbolmap'
+2019-12-12 06:22:34 +0000  >>> Copying /Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/BCSymbolMaps/AE2953B3-86E3-3253-B723-9EC1AA34093C.bcsymbolmap 
+2019-12-12 06:22:34 +0000  copying file ./AE2953B3-86E3-3253-B723-9EC1AA34093C.bcsymbolmap ... 
+2019-12-12 06:22:34 +0000  21202 bytes for ./AE2953B3-86E3-3253-B723-9EC1AA34093C.bcsymbolmap
+2019-12-12 06:22:34 +0000  /usr/bin/ditto exited with 0
+2019-12-12 06:22:34 +0000  Running /usr/bin/ditto '-V' '/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/BCSymbolMaps/2193E2FB-0F04-3CFB-8436-8120AE53C330.bcsymbolmap' '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/BCSymbolMaps/2193E2FB-0F04-3CFB-8436-8120AE53C330.bcsymbolmap'
+2019-12-12 06:22:34 +0000  >>> Copying /Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/BCSymbolMaps/2193E2FB-0F04-3CFB-8436-8120AE53C330.bcsymbolmap 
+2019-12-12 06:22:34 +0000  copying file ./2193E2FB-0F04-3CFB-8436-8120AE53C330.bcsymbolmap ... 
+2019-12-12 06:22:34 +0000  116174 bytes for ./2193E2FB-0F04-3CFB-8436-8120AE53C330.bcsymbolmap
+2019-12-12 06:22:34 +0000  /usr/bin/ditto exited with 0
+2019-12-12 06:22:34 +0000  Running /usr/bin/ditto '-V' '/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/BCSymbolMaps/1474655B-CA09-38A8-8717-26CE3ED630F3.bcsymbolmap' '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/BCSymbolMaps/1474655B-CA09-38A8-8717-26CE3ED630F3.bcsymbolmap'
+2019-12-12 06:22:34 +0000  >>> Copying /Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/BCSymbolMaps/1474655B-CA09-38A8-8717-26CE3ED630F3.bcsymbolmap 
+2019-12-12 06:22:34 +0000  copying file ./1474655B-CA09-38A8-8717-26CE3ED630F3.bcsymbolmap ... 
+2019-12-12 06:22:34 +0000  45706 bytes for ./1474655B-CA09-38A8-8717-26CE3ED630F3.bcsymbolmap
+2019-12-12 06:22:34 +0000  /usr/bin/ditto exited with 0
+2019-12-12 06:22:34 +0000  Running /usr/bin/ditto '-V' '/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/BCSymbolMaps/59B2B0E7-DFA3-3A76-B53F-A5E3B6FB286B.bcsymbolmap' '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/BCSymbolMaps/59B2B0E7-DFA3-3A76-B53F-A5E3B6FB286B.bcsymbolmap'
+2019-12-12 06:22:34 +0000  >>> Copying /Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/BCSymbolMaps/59B2B0E7-DFA3-3A76-B53F-A5E3B6FB286B.bcsymbolmap 
+2019-12-12 06:22:34 +0000  copying file ./59B2B0E7-DFA3-3A76-B53F-A5E3B6FB286B.bcsymbolmap ... 
+2019-12-12 06:22:34 +0000  292227 bytes for ./59B2B0E7-DFA3-3A76-B53F-A5E3B6FB286B.bcsymbolmap
+2019-12-12 06:22:34 +0000  /usr/bin/ditto exited with 0
+2019-12-12 06:22:34 +0000  Processing step: IDEDistributionSymbolsStep
+2019-12-12 06:22:34 +0000  Excluding symbols for Alamofire.framework
+2019-12-12 06:22:34 +0000  Excluding symbols for ChromaColorPicker.framework
+2019-12-12 06:22:34 +0000  Excluding symbols for ColorPickTip.framework
+2019-12-12 06:22:34 +0000  Excluding symbols for MBProgressHUD.framework
+2019-12-12 06:22:34 +0000  Excluding symbols for ObjectMapper.framework
+2019-12-12 06:22:34 +0000  Excluding symbols for pdfDrawing.framework
+2019-12-12 06:22:34 +0000  Excluding symbols for E-MeetingNote.app
+2019-12-12 06:22:34 +0000  Processing step: IDEDistributionCopyAppleProvidedContentStep
+2019-12-12 06:22:34 +0000  Processing step: IDEDistributionAppThinningStep
+2019-12-12 06:22:34 +0000  Skipping step: IDEDistributionAppThinningStep because it said so
+2019-12-12 06:22:34 +0000  Processing step: IDEDistributionArchThinningStep
+2019-12-12 06:22:34 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/Payload/E-MeetingNote.app/Frameworks/Alamofire.framework/Alamofire' '-verify_arch' 'arm64e'
+2019-12-12 06:22:34 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2019-12-12 06:22:34 +0000  Skipping architecture thinning for item "Alamofire" because arch "arm64e" wasn't found
+2019-12-12 06:22:34 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/Payload/E-MeetingNote.app/Frameworks/ChromaColorPicker.framework/ChromaColorPicker' '-verify_arch' 'arm64e'
+2019-12-12 06:22:34 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2019-12-12 06:22:34 +0000  Skipping architecture thinning for item "ChromaColorPicker" because arch "arm64e" wasn't found
+2019-12-12 06:22:34 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/Payload/E-MeetingNote.app/Frameworks/ColorPickTip.framework/ColorPickTip' '-verify_arch' 'arm64e'
+2019-12-12 06:22:34 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2019-12-12 06:22:34 +0000  Skipping architecture thinning for item "ColorPickTip" because arch "arm64e" wasn't found
+2019-12-12 06:22:34 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/Payload/E-MeetingNote.app/Frameworks/MBProgressHUD.framework/MBProgressHUD' '-verify_arch' 'arm64e'
+2019-12-12 06:22:34 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2019-12-12 06:22:34 +0000  Skipping architecture thinning for item "MBProgressHUD" because arch "arm64e" wasn't found
+2019-12-12 06:22:34 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/Payload/E-MeetingNote.app/Frameworks/ObjectMapper.framework/ObjectMapper' '-verify_arch' 'arm64e'
+2019-12-12 06:22:34 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2019-12-12 06:22:34 +0000  Skipping architecture thinning for item "ObjectMapper" because arch "arm64e" wasn't found
+2019-12-12 06:22:34 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/Payload/E-MeetingNote.app/Frameworks/pdfDrawing.framework/pdfDrawing' '-verify_arch' 'arm64e'
+2019-12-12 06:22:34 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2019-12-12 06:22:34 +0000  Skipping architecture thinning for item "pdfDrawing" because arch "arm64e" wasn't found
+2019-12-12 06:22:34 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/Payload/E-MeetingNote.app/E-MeetingNote' '-verify_arch' 'arm64e'
+2019-12-12 06:22:34 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2019-12-12 06:22:34 +0000  Skipping architecture thinning for item "E-MeetingNote" because arch "arm64e" wasn't found
+2019-12-12 06:22:34 +0000  Processing step: IDEDistributionODRStep
+2019-12-12 06:22:34 +0000  Processing step: IDEDistributionStripXattrsStep
+2019-12-12 06:22:34 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fcc54eb94a0; bundleID='org.cocoapods.Alamofire', path='<DVTFilePath:0x7fcc5685efa0:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/Alamofire.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fcc51342580; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fcc53cfb700; name='Apple Development: Tanakorn Chumprasert (FB56883F6U)', hash='F29BAC07247DF3B031DB3606C4D64B418DB2D914', serialNumber='262349B2A7E903F5', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-10-31 08:26:31 +0000''>', entitlements='(null)', teamID='7QP7U63B4K', identifier='org.cocoapods.Alamofire', executablePath='<DVTFilePath:0x7fcc54ad90e0:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/Alamofire.framework/Alamofire'>', hardenedRuntime='0'>'>
+2019-12-12 06:22:34 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fcc569112e0; bundleID='org.cocoapods.ChromaColorPicker', path='<DVTFilePath:0x7fcc51f59d40:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/ChromaColorPicker.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fcc54d671d0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fcc53cfb700; name='Apple Development: Tanakorn Chumprasert (FB56883F6U)', hash='F29BAC07247DF3B031DB3606C4D64B418DB2D914', serialNumber='262349B2A7E903F5', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-10-31 08:26:31 +0000''>', entitlements='(null)', teamID='7QP7U63B4K', identifier='org.cocoapods.ChromaColorPicker', executablePath='<DVTFilePath:0x7fcc56948970:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/ChromaColorPicker.framework/ChromaColorPicker'>', hardenedRuntime='0'>'>
+2019-12-12 06:22:34 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fcc5688fea0; bundleID='org.cocoapods.ColorPickTip', path='<DVTFilePath:0x7fcc54dba3b0:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/ColorPickTip.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fcc569285d0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fcc5358c370; name='Apple Development: Tanakorn Chumprasert (FB56883F6U)', hash='F29BAC07247DF3B031DB3606C4D64B418DB2D914', serialNumber='262349B2A7E903F5', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-10-31 08:26:31 +0000''>', entitlements='(null)', teamID='7QP7U63B4K', identifier='org.cocoapods.ColorPickTip', executablePath='<DVTFilePath:0x7fcc56b4b150:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/ColorPickTip.framework/ColorPickTip'>', hardenedRuntime='0'>'>
+2019-12-12 06:22:34 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fcc53aaae80; bundleID='org.cocoapods.MBProgressHUD', path='<DVTFilePath:0x7fcc56851770:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/MBProgressHUD.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fcc4b9ac9c0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fcc53cfb700; name='Apple Development: Tanakorn Chumprasert (FB56883F6U)', hash='F29BAC07247DF3B031DB3606C4D64B418DB2D914', serialNumber='262349B2A7E903F5', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-10-31 08:26:31 +0000''>', entitlements='(null)', teamID='7QP7U63B4K', identifier='org.cocoapods.MBProgressHUD', executablePath='<DVTFilePath:0x7fcc56946e80:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/MBProgressHUD.framework/MBProgressHUD'>', hardenedRuntime='0'>'>
+2019-12-12 06:22:34 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fcc54cd4450; bundleID='org.cocoapods.ObjectMapper', path='<DVTFilePath:0x7fcc5536e780:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/ObjectMapper.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fcc532d7c30; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fcc54f280a0; name='Apple Development: Tanakorn Chumprasert (FB56883F6U)', hash='F29BAC07247DF3B031DB3606C4D64B418DB2D914', serialNumber='262349B2A7E903F5', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-10-31 08:26:31 +0000''>', entitlements='(null)', teamID='7QP7U63B4K', identifier='org.cocoapods.ObjectMapper', executablePath='<DVTFilePath:0x7fcc53bda0f0:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/ObjectMapper.framework/ObjectMapper'>', hardenedRuntime='0'>'>
+2019-12-12 06:22:34 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fcc568d4920; bundleID='org.cocoapods.pdfDrawing', path='<DVTFilePath:0x7fcc53a02fd0:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/pdfDrawing.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fcc5684ac20; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fcc53c0fd00; name='Apple Development: Tanakorn Chumprasert (FB56883F6U)', hash='F29BAC07247DF3B031DB3606C4D64B418DB2D914', serialNumber='262349B2A7E903F5', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-10-31 08:26:31 +0000''>', entitlements='(null)', teamID='7QP7U63B4K', identifier='org.cocoapods.pdfDrawing', executablePath='<DVTFilePath:0x7fcc4fd7c720:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/pdfDrawing.framework/pdfDrawing'>', hardenedRuntime='0'>'>
+2019-12-12 06:22:34 +0000  Running /usr/bin/xattr '-crs' '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/Payload/E-MeetingNote.app'
+2019-12-12 06:22:34 +0000  /usr/bin/xattr exited with 0
+2019-12-12 06:22:34 +0000  Processing step: IDEDistributionCodesignStep
+2019-12-12 06:22:34 +0000  Entitlements for <IDEDistributionItem: 0x7fcc54eb94a0; bundleID='org.cocoapods.Alamofire', path='<DVTFilePath:0x7fcc5685efa0:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/Alamofire.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fcc51342580; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fcc54d81850; name='Apple Development: Tanakorn Chumprasert (FB56883F6U)', hash='F29BAC07247DF3B031DB3606C4D64B418DB2D914', serialNumber='262349B2A7E903F5', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-10-31 08:26:31 +0000''>', entitlements='(null)', teamID='7QP7U63B4K', identifier='org.cocoapods.Alamofire', executablePath='<DVTFilePath:0x7fcc54ad90e0:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/Alamofire.framework/Alamofire'>', hardenedRuntime='0'>'>: {
+}
+2019-12-12 06:22:34 +0000  Writing entitlements for <IDEDistributionItem: 0x7fcc54eb94a0; bundleID='org.cocoapods.Alamofire', path='<DVTFilePath:0x7fcc5685efa0:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/Alamofire.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fcc51342580; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fcc55811c00; name='Apple Development: Tanakorn Chumprasert (FB56883F6U)', hash='F29BAC07247DF3B031DB3606C4D64B418DB2D914', serialNumber='262349B2A7E903F5', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-10-31 08:26:31 +0000''>', entitlements='(null)', teamID='7QP7U63B4K', identifier='org.cocoapods.Alamofire', executablePath='<DVTFilePath:0x7fcc54ad90e0:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/Alamofire.framework/Alamofire'>', hardenedRuntime='0'>'> to: /var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/entitlements~~~6BZAzM
+2019-12-12 06:22:34 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'F9A3E926EDB2B14387B1FA3002DE09B16497102A' '--entitlements' '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/entitlements~~~6BZAzM' '--preserve-metadata=identifier,flags,runtime' '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/Payload/E-MeetingNote.app/Frameworks/Alamofire.framework'
+2019-12-12 06:22:34 +0000  /var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/Payload/E-MeetingNote.app/Frameworks/Alamofire.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.Alamofire]
+2019-12-12 06:22:34 +0000  /usr/bin/codesign exited with 0
+2019-12-12 06:22:34 +0000  Entitlements for <IDEDistributionItem: 0x7fcc569112e0; bundleID='org.cocoapods.ChromaColorPicker', path='<DVTFilePath:0x7fcc51f59d40:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/ChromaColorPicker.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fcc54d671d0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fcc56ca72c0; name='Apple Development: Tanakorn Chumprasert (FB56883F6U)', hash='F29BAC07247DF3B031DB3606C4D64B418DB2D914', serialNumber='262349B2A7E903F5', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-10-31 08:26:31 +0000''>', entitlements='(null)', teamID='7QP7U63B4K', identifier='org.cocoapods.ChromaColorPicker', executablePath='<DVTFilePath:0x7fcc56948970:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/ChromaColorPicker.framework/ChromaColorPicker'>', hardenedRuntime='0'>'>: {
+}
+2019-12-12 06:22:34 +0000  Writing entitlements for <IDEDistributionItem: 0x7fcc569112e0; bundleID='org.cocoapods.ChromaColorPicker', path='<DVTFilePath:0x7fcc51f59d40:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/ChromaColorPicker.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fcc54d671d0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fcc53b2c330; name='Apple Development: Tanakorn Chumprasert (FB56883F6U)', hash='F29BAC07247DF3B031DB3606C4D64B418DB2D914', serialNumber='262349B2A7E903F5', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-10-31 08:26:31 +0000''>', entitlements='(null)', teamID='7QP7U63B4K', identifier='org.cocoapods.ChromaColorPicker', executablePath='<DVTFilePath:0x7fcc56948970:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/ChromaColorPicker.framework/ChromaColorPicker'>', hardenedRuntime='0'>'> to: /var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/entitlements~~~uzn5WF
+2019-12-12 06:22:34 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'F9A3E926EDB2B14387B1FA3002DE09B16497102A' '--entitlements' '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/entitlements~~~uzn5WF' '--preserve-metadata=identifier,flags,runtime' '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/Payload/E-MeetingNote.app/Frameworks/ChromaColorPicker.framework'
+2019-12-12 06:22:35 +0000  /var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/Payload/E-MeetingNote.app/Frameworks/ChromaColorPicker.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.ChromaColorPicker]
+2019-12-12 06:22:35 +0000  /usr/bin/codesign exited with 0
+2019-12-12 06:22:35 +0000  Entitlements for <IDEDistributionItem: 0x7fcc5688fea0; bundleID='org.cocoapods.ColorPickTip', path='<DVTFilePath:0x7fcc54dba3b0:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/ColorPickTip.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fcc569285d0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fcc52069660; name='Apple Development: Tanakorn Chumprasert (FB56883F6U)', hash='F29BAC07247DF3B031DB3606C4D64B418DB2D914', serialNumber='262349B2A7E903F5', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-10-31 08:26:31 +0000''>', entitlements='(null)', teamID='7QP7U63B4K', identifier='org.cocoapods.ColorPickTip', executablePath='<DVTFilePath:0x7fcc56b4b150:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/ColorPickTip.framework/ColorPickTip'>', hardenedRuntime='0'>'>: {
+}
+2019-12-12 06:22:35 +0000  Writing entitlements for <IDEDistributionItem: 0x7fcc5688fea0; bundleID='org.cocoapods.ColorPickTip', path='<DVTFilePath:0x7fcc54dba3b0:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/ColorPickTip.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fcc569285d0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fcc558263c0; name='Apple Development: Tanakorn Chumprasert (FB56883F6U)', hash='F29BAC07247DF3B031DB3606C4D64B418DB2D914', serialNumber='262349B2A7E903F5', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-10-31 08:26:31 +0000''>', entitlements='(null)', teamID='7QP7U63B4K', identifier='org.cocoapods.ColorPickTip', executablePath='<DVTFilePath:0x7fcc56b4b150:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/ColorPickTip.framework/ColorPickTip'>', hardenedRuntime='0'>'> to: /var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/entitlements~~~zo7csm
+2019-12-12 06:22:35 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'F9A3E926EDB2B14387B1FA3002DE09B16497102A' '--entitlements' '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/entitlements~~~zo7csm' '--preserve-metadata=identifier,flags,runtime' '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/Payload/E-MeetingNote.app/Frameworks/ColorPickTip.framework'
+2019-12-12 06:22:35 +0000  /var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/Payload/E-MeetingNote.app/Frameworks/ColorPickTip.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.ColorPickTip]
+2019-12-12 06:22:35 +0000  /usr/bin/codesign exited with 0
+2019-12-12 06:22:35 +0000  Entitlements for <IDEDistributionItem: 0x7fcc53aaae80; bundleID='org.cocoapods.MBProgressHUD', path='<DVTFilePath:0x7fcc56851770:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/MBProgressHUD.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fcc4b9ac9c0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fcc568adb60; name='Apple Development: Tanakorn Chumprasert (FB56883F6U)', hash='F29BAC07247DF3B031DB3606C4D64B418DB2D914', serialNumber='262349B2A7E903F5', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-10-31 08:26:31 +0000''>', entitlements='(null)', teamID='7QP7U63B4K', identifier='org.cocoapods.MBProgressHUD', executablePath='<DVTFilePath:0x7fcc56946e80:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/MBProgressHUD.framework/MBProgressHUD'>', hardenedRuntime='0'>'>: {
+}
+2019-12-12 06:22:35 +0000  Writing entitlements for <IDEDistributionItem: 0x7fcc53aaae80; bundleID='org.cocoapods.MBProgressHUD', path='<DVTFilePath:0x7fcc56851770:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/MBProgressHUD.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fcc4b9ac9c0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fcc53b2c330; name='Apple Development: Tanakorn Chumprasert (FB56883F6U)', hash='F29BAC07247DF3B031DB3606C4D64B418DB2D914', serialNumber='262349B2A7E903F5', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-10-31 08:26:31 +0000''>', entitlements='(null)', teamID='7QP7U63B4K', identifier='org.cocoapods.MBProgressHUD', executablePath='<DVTFilePath:0x7fcc56946e80:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/MBProgressHUD.framework/MBProgressHUD'>', hardenedRuntime='0'>'> to: /var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/entitlements~~~ctnMgV
+2019-12-12 06:22:35 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'F9A3E926EDB2B14387B1FA3002DE09B16497102A' '--entitlements' '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/entitlements~~~ctnMgV' '--preserve-metadata=identifier,flags,runtime' '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/Payload/E-MeetingNote.app/Frameworks/MBProgressHUD.framework'
+2019-12-12 06:22:35 +0000  /var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/Payload/E-MeetingNote.app/Frameworks/MBProgressHUD.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.MBProgressHUD]
+2019-12-12 06:22:35 +0000  /usr/bin/codesign exited with 0
+2019-12-12 06:22:35 +0000  Entitlements for <IDEDistributionItem: 0x7fcc54cd4450; bundleID='org.cocoapods.ObjectMapper', path='<DVTFilePath:0x7fcc5536e780:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/ObjectMapper.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fcc532d7c30; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fcc55549d10; name='Apple Development: Tanakorn Chumprasert (FB56883F6U)', hash='F29BAC07247DF3B031DB3606C4D64B418DB2D914', serialNumber='262349B2A7E903F5', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-10-31 08:26:31 +0000''>', entitlements='(null)', teamID='7QP7U63B4K', identifier='org.cocoapods.ObjectMapper', executablePath='<DVTFilePath:0x7fcc53bda0f0:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/ObjectMapper.framework/ObjectMapper'>', hardenedRuntime='0'>'>: {
+}
+2019-12-12 06:22:35 +0000  Writing entitlements for <IDEDistributionItem: 0x7fcc54cd4450; bundleID='org.cocoapods.ObjectMapper', path='<DVTFilePath:0x7fcc5536e780:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/ObjectMapper.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fcc532d7c30; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fcc568a7270; name='Apple Development: Tanakorn Chumprasert (FB56883F6U)', hash='F29BAC07247DF3B031DB3606C4D64B418DB2D914', serialNumber='262349B2A7E903F5', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-10-31 08:26:31 +0000''>', entitlements='(null)', teamID='7QP7U63B4K', identifier='org.cocoapods.ObjectMapper', executablePath='<DVTFilePath:0x7fcc53bda0f0:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/ObjectMapper.framework/ObjectMapper'>', hardenedRuntime='0'>'> to: /var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/entitlements~~~rdL3v6
+2019-12-12 06:22:35 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'F9A3E926EDB2B14387B1FA3002DE09B16497102A' '--entitlements' '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/entitlements~~~rdL3v6' '--preserve-metadata=identifier,flags,runtime' '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/Payload/E-MeetingNote.app/Frameworks/ObjectMapper.framework'
+2019-12-12 06:22:35 +0000  /var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/Payload/E-MeetingNote.app/Frameworks/ObjectMapper.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.ObjectMapper]
+2019-12-12 06:22:35 +0000  /usr/bin/codesign exited with 0
+2019-12-12 06:22:35 +0000  Entitlements for <IDEDistributionItem: 0x7fcc568d4920; bundleID='org.cocoapods.pdfDrawing', path='<DVTFilePath:0x7fcc53a02fd0:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/pdfDrawing.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fcc5684ac20; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fcc56896640; name='Apple Development: Tanakorn Chumprasert (FB56883F6U)', hash='F29BAC07247DF3B031DB3606C4D64B418DB2D914', serialNumber='262349B2A7E903F5', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-10-31 08:26:31 +0000''>', entitlements='(null)', teamID='7QP7U63B4K', identifier='org.cocoapods.pdfDrawing', executablePath='<DVTFilePath:0x7fcc4fd7c720:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/pdfDrawing.framework/pdfDrawing'>', hardenedRuntime='0'>'>: {
+}
+2019-12-12 06:22:35 +0000  Writing entitlements for <IDEDistributionItem: 0x7fcc568d4920; bundleID='org.cocoapods.pdfDrawing', path='<DVTFilePath:0x7fcc53a02fd0:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/pdfDrawing.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fcc5684ac20; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fcc55370bf0; name='Apple Development: Tanakorn Chumprasert (FB56883F6U)', hash='F29BAC07247DF3B031DB3606C4D64B418DB2D914', serialNumber='262349B2A7E903F5', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-10-31 08:26:31 +0000''>', entitlements='(null)', teamID='7QP7U63B4K', identifier='org.cocoapods.pdfDrawing', executablePath='<DVTFilePath:0x7fcc4fd7c720:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/Frameworks/pdfDrawing.framework/pdfDrawing'>', hardenedRuntime='0'>'> to: /var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/entitlements~~~OxWYRb
+2019-12-12 06:22:35 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'F9A3E926EDB2B14387B1FA3002DE09B16497102A' '--entitlements' '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/entitlements~~~OxWYRb' '--preserve-metadata=identifier,flags,runtime' '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/Payload/E-MeetingNote.app/Frameworks/pdfDrawing.framework'
+2019-12-12 06:22:35 +0000  /var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/Payload/E-MeetingNote.app/Frameworks/pdfDrawing.framework: signed bundle with Mach-O thin (arm64) [org.cocoapods.pdfDrawing]
+2019-12-12 06:22:35 +0000  /usr/bin/codesign exited with 0
+2019-12-12 06:22:35 +0000  Entitlements for <IDEDistributionItem: 0x7fcc54ef48b0; bundleID='inet.develop.dsolution.E-MeetingNote', path='<DVTFilePath:0x7fcc4c5f3d60:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fcc51058200; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fcc568bdf00; name='Apple Development: Tanakorn Chumprasert (FB56883F6U)', hash='F29BAC07247DF3B031DB3606C4D64B418DB2D914', serialNumber='262349B2A7E903F5', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-10-31 08:26:31 +0000''>', entitlements='{
+    "application-identifier" = "7QP7U63B4K.inet.develop.dsolution.E-MeetingNote";
+    "com.apple.developer.team-identifier" = 7QP7U63B4K;
+    "get-task-allow" = 1;
+}', teamID='7QP7U63B4K', identifier='inet.develop.dsolution.E-MeetingNote', executablePath='<DVTFilePath:0x7fcc53588b80:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/E-MeetingNote'>', hardenedRuntime='0'>'>: {
+    "application-identifier" = "7QP7U63B4K.inet.develop.dsolution.E-MeetingNote";
+    "beta-reports-active" = 1;
+    "com.apple.developer.team-identifier" = 7QP7U63B4K;
+    "get-task-allow" = 0;
+}
+2019-12-12 06:22:35 +0000  Writing entitlements for <IDEDistributionItem: 0x7fcc54ef48b0; bundleID='inet.develop.dsolution.E-MeetingNote', path='<DVTFilePath:0x7fcc4c5f3d60:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fcc51058200; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fcc53b2c330; name='Apple Development: Tanakorn Chumprasert (FB56883F6U)', hash='F29BAC07247DF3B031DB3606C4D64B418DB2D914', serialNumber='262349B2A7E903F5', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-10-31 08:26:31 +0000''>', entitlements='{
+    "application-identifier" = "7QP7U63B4K.inet.develop.dsolution.E-MeetingNote";
+    "com.apple.developer.team-identifier" = 7QP7U63B4K;
+    "get-task-allow" = 1;
+}', teamID='7QP7U63B4K', identifier='inet.develop.dsolution.E-MeetingNote', executablePath='<DVTFilePath:0x7fcc53588b80:'/Users/dsolutionmacboosk/Library/Developer/Xcode/Archives/2562-12-12/E-MeetingNote 12-12-2562 BE 13.17.xcarchive/Products/Applications/E-MeetingNote.app/E-MeetingNote'>', hardenedRuntime='0'>'> to: /var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/entitlements~~~JkRU9d
+2019-12-12 06:22:35 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'F9A3E926EDB2B14387B1FA3002DE09B16497102A' '--entitlements' '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/entitlements~~~JkRU9d' '--preserve-metadata=identifier,flags,runtime' '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/Payload/E-MeetingNote.app'
+2019-12-12 06:22:35 +0000  /var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root/Payload/E-MeetingNote.app: signed app bundle with Mach-O thin (arm64) [inet.develop.dsolution.E-MeetingNote]
+2019-12-12 06:22:35 +0000  /usr/bin/codesign exited with 0
+2019-12-12 06:22:35 +0000  Processing step: IDEDistributionZipODRItemStep
+2019-12-12 06:22:35 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2019-12-12 06:22:35 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2019-12-12 06:22:35 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2019-12-12 06:22:35 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2019-12-12 06:22:35 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2019-12-12 06:22:35 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2019-12-12 06:22:35 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2019-12-12 06:22:35 +0000  Processing step: IDEDistributionCreateIPAStep
+2019-12-12 06:22:35 +0000  Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root' '/var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Packages/E-MeetingNote.ipa'
+2019-12-12 06:22:35 +0000  >>> Copying /var/folders/3y/7jc7wm896l538jd20m2b38wr0000gn/T/XcodeDistPipeline.~~~BFePQp/Root 
+2019-12-12 06:22:35 +0000  copying file ./BCSymbolMaps/AE2953B3-86E3-3253-B723-9EC1AA34093C.bcsymbolmap ... 
+2019-12-12 06:22:35 +0000  21202 bytes for ./BCSymbolMaps/AE2953B3-86E3-3253-B723-9EC1AA34093C.bcsymbolmap
+copying file ./BCSymbolMaps/59B2B0E7-DFA3-3A76-B53F-A5E3B6FB286B.bcsymbolmap ... 
+2019-12-12 06:22:35 +0000  292227 bytes for ./BCSymbolMaps/59B2B0E7-DFA3-3A76-B53F-A5E3B6FB286B.bcsymbolmap
+copying file ./BCSymbolMaps/021C965A-B117-37D6-9387-AD0FD3BD296B.bcsymbolmap ... 
+2019-12-12 06:22:35 +0000  350962 bytes for ./BCSymbolMaps/021C965A-B117-37D6-9387-AD0FD3BD296B.bcsymbolmap
+copying file ./BCSymbolMaps/F5399DEC-600A-36CD-A6DB-45E2C9D2FD64.bcsymbolmap ... 
+2019-12-12 06:22:35 +0000  50911 bytes for ./BCSymbolMaps/F5399DEC-600A-36CD-A6DB-45E2C9D2FD64.bcsymbolmap
+copying file ./BCSymbolMaps/793E13E7-CD89-3C84-87A0-2466587EB790.bcsymbolmap ... 
+2019-12-12 06:22:35 +0000  35117 bytes for ./BCSymbolMaps/793E13E7-CD89-3C84-87A0-2466587EB790.bcsymbolmap
+2019-12-12 06:22:35 +0000  copying file ./BCSymbolMaps/2193E2FB-0F04-3CFB-8436-8120AE53C330.bcsymbolmap ... 
+2019-12-12 06:22:35 +0000  116174 bytes for ./BCSymbolMaps/2193E2FB-0F04-3CFB-8436-8120AE53C330.bcsymbolmap
+copying file ./BCSymbolMaps/1474655B-CA09-38A8-8717-26CE3ED630F3.bcsymbolmap ... 
+2019-12-12 06:22:35 +0000  45706 bytes for ./BCSymbolMaps/1474655B-CA09-38A8-8717-26CE3ED630F3.bcsymbolmap
+2019-12-12 06:22:35 +0000  copying file ./Payload/E-MeetingNote.app/_CodeSignature/CodeResources ... 
+2019-12-12 06:22:35 +0000  14217 bytes for ./Payload/E-MeetingNote.app/_CodeSignature/CodeResources
+2019-12-12 06:22:35 +0000  copying file ./Payload/E-MeetingNote.app/ManageNoteViewCell.nib ... 
+2019-12-12 06:22:35 +0000  3053 bytes for ./Payload/E-MeetingNote.app/ManageNoteViewCell.nib
+copying file ./Payload/E-MeetingNote.app/ToolView.nib ... 
+2019-12-12 06:22:35 +0000  3651 bytes for ./Payload/E-MeetingNote.app/ToolView.nib
+copying file ./Payload/E-MeetingNote.app/AppIcon60x60@2x.png ... 
+2019-12-12 06:22:35 +0000  11492 bytes for ./Payload/E-MeetingNote.app/AppIcon60x60@2x.png
+copying file ./Payload/E-MeetingNote.app/E-MeetingNote ... 
+2019-12-12 06:22:35 +0000  2223840 bytes for ./Payload/E-MeetingNote.app/E-MeetingNote
+2019-12-12 06:22:35 +0000  copying file ./Payload/E-MeetingNote.app/Base.lproj/Main.storyboardc/JwI-0q-ilr-view-8YU-WC-zul.nib ... 
+1839 bytes for ./Payload/E-MeetingNote.app/Base.lproj/Main.storyboardc/JwI-0q-ilr-view-8YU-WC-zul.nib
+copying file ./Payload/E-MeetingNote.app/Base.lproj/Main.storyboardc/search.nib ... 
+1470 bytes for ./Payload/E-MeetingNote.app/Base.lproj/Main.storyboardc/search.nib
+copying file ./Payload/E-MeetingNote.app/Base.lproj/Main.storyboardc/rIT-Ug-h3y-view-dxz-z1-6fs.nib ... 
+3348 bytes for ./Payload/E-MeetingNote.app/Base.lproj/Main.storyboardc/rIT-Ug-h3y-view-dxz-z1-6fs.nib
+copying file ./Payload/E-MeetingNote.app/Base.lproj/Main.storyboardc/highlightColorPick.nib ... 
+1052 bytes for ./Payload/E-MeetingNote.app/Base.lproj/Main.storyboardc/highlightColorPick.nib
+copying file ./Payload/E-MeetingNote.app/Base.lproj/Main.storyboardc/manageNote.nib ... 
+2019-12-12 06:22:35 +0000  2038 bytes for ./Payload/E-MeetingNote.app/Base.lproj/Main.storyboardc/manageNote.nib
+copying file ./Payload/E-MeetingNote.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib ... 
+2019-12-12 06:22:35 +0000  5166 bytes for ./Payload/E-MeetingNote.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib
+2019-12-12 06:22:35 +0000  copying file ./Payload/E-MeetingNote.app/Base.lproj/Main.storyboardc/Hbd-4a-nrU-view-Et1-bB-Bil.nib ... 
+2019-12-12 06:22:35 +0000  3808 bytes for ./Payload/E-MeetingNote.app/Base.lproj/Main.storyboardc/Hbd-4a-nrU-view-Et1-bB-Bil.nib
+copying file ./Payload/E-MeetingNote.app/Base.lproj/Main.storyboardc/vc.nib ... 
+2019-12-12 06:22:35 +0000  2943 bytes for ./Payload/E-MeetingNote.app/Base.lproj/Main.storyboardc/vc.nib
+copying file ./Payload/E-MeetingNote.app/Base.lproj/Main.storyboardc/colorpick.nib ... 
+2019-12-12 06:22:35 +0000  1034 bytes for ./Payload/E-MeetingNote.app/Base.lproj/Main.storyboardc/colorpick.nib
+copying file ./Payload/E-MeetingNote.app/Base.lproj/Main.storyboardc/D6l-Ti-8kR-view-7Sk-R7-gGd.nib ... 
+2019-12-12 06:22:35 +0000  5119 bytes for ./Payload/E-MeetingNote.app/Base.lproj/Main.storyboardc/D6l-Ti-8kR-view-7Sk-R7-gGd.nib
+copying file ./Payload/E-MeetingNote.app/Base.lproj/Main.storyboardc/gM2-i2-NY4-view-DbO-TN-nt6.nib ... 
+2019-12-12 06:22:35 +0000  3303 bytes for ./Payload/E-MeetingNote.app/Base.lproj/Main.storyboardc/gM2-i2-NY4-view-DbO-TN-nt6.nib
+copying file ./Payload/E-MeetingNote.app/Base.lproj/Main.storyboardc/addNote.nib ... 
+2019-12-12 06:22:35 +0000  1587 bytes for ./Payload/E-MeetingNote.app/Base.lproj/Main.storyboardc/addNote.nib
+copying file ./Payload/E-MeetingNote.app/Base.lproj/Main.storyboardc/Info.plist ... 
+2019-12-12 06:22:35 +0000  441 bytes for ./Payload/E-MeetingNote.app/Base.lproj/Main.storyboardc/Info.plist
+copying file ./Payload/E-MeetingNote.app/Base.lproj/Main.storyboardc/UINavigationController-Zdr-Ub-gaC.nib ... 
+2019-12-12 06:22:35 +0000  3671 bytes for ./Payload/E-MeetingNote.app/Base.lproj/Main.storyboardc/UINavigationController-Zdr-Ub-gaC.nib
+2019-12-12 06:22:35 +0000  copying file ./Payload/E-MeetingNote.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib ... 
+2019-12-12 06:22:35 +0000  1173 bytes for ./Payload/E-MeetingNote.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
+copying file ./Payload/E-MeetingNote.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib ... 
+2019-12-12 06:22:35 +0000  896 bytes for ./Payload/E-MeetingNote.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
+copying file ./Payload/E-MeetingNote.app/Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+2019-12-12 06:22:35 +0000  258 bytes for ./Payload/E-MeetingNote.app/Base.lproj/LaunchScreen.storyboardc/Info.plist
+copying file ./Payload/E-MeetingNote.app/Assets.car ... 
+2019-12-12 06:22:35 +0000  880224 bytes for ./Payload/E-MeetingNote.app/Assets.car
+2019-12-12 06:22:35 +0000  copying file ./Payload/E-MeetingNote.app/AppIcon76x76@2x~ipad.png ... 
+16179 bytes for ./Payload/E-MeetingNote.app/AppIcon76x76@2x~ipad.png
+copying file ./Payload/E-MeetingNote.app/ThumbnailGridCell.nib ... 
+2989 bytes for ./Payload/E-MeetingNote.app/ThumbnailGridCell.nib
+copying file ./Payload/E-MeetingNote.app/SearchResultsCell.nib ... 
+2019-12-12 06:22:35 +0000  3649 bytes for ./Payload/E-MeetingNote.app/SearchResultsCell.nib
+copying file ./Payload/E-MeetingNote.app/ColorPickViewCell.nib ... 
+2391 bytes for ./Payload/E-MeetingNote.app/ColorPickViewCell.nib
+copying file ./Payload/E-MeetingNote.app/Frameworks/ChromaColorPicker.framework/_CodeSignature/CodeResources ... 
+1798 bytes for ./Payload/E-MeetingNote.app/Frameworks/ChromaColorPicker.framework/_CodeSignature/CodeResources
+copying file ./Payload/E-MeetingNote.app/Frameworks/ChromaColorPicker.framework/ChromaColorPicker ... 
+2019-12-12 06:22:35 +0000  598288 bytes for ./Payload/E-MeetingNote.app/Frameworks/ChromaColorPicker.framework/ChromaColorPicker
+2019-12-12 06:22:35 +0000  copying file ./Payload/E-MeetingNote.app/Frameworks/ChromaColorPicker.framework/Info.plist ... 
+759 bytes for ./Payload/E-MeetingNote.app/Frameworks/ChromaColorPicker.framework/Info.plist
+copying file ./Payload/E-MeetingNote.app/Frameworks/MBProgressHUD.framework/_CodeSignature/CodeResources ... 
+1798 bytes for ./Payload/E-MeetingNote.app/Frameworks/MBProgressHUD.framework/_CodeSignature/CodeResources
+copying file ./Payload/E-MeetingNote.app/Frameworks/MBProgressHUD.framework/MBProgressHUD ... 
+2019-12-12 06:22:35 +0000  368496 bytes for ./Payload/E-MeetingNote.app/Frameworks/MBProgressHUD.framework/MBProgressHUD
+copying file ./Payload/E-MeetingNote.app/Frameworks/MBProgressHUD.framework/Info.plist ... 
+2019-12-12 06:22:35 +0000  749 bytes for ./Payload/E-MeetingNote.app/Frameworks/MBProgressHUD.framework/Info.plist
+copying file ./Payload/E-MeetingNote.app/Frameworks/Alamofire.framework/_CodeSignature/CodeResources ... 
+1798 bytes for ./Payload/E-MeetingNote.app/Frameworks/Alamofire.framework/_CodeSignature/CodeResources
+copying file ./Payload/E-MeetingNote.app/Frameworks/Alamofire.framework/Alamofire ... 
+2019-12-12 06:22:36 +0000  2632576 bytes for ./Payload/E-MeetingNote.app/Frameworks/Alamofire.framework/Alamofire
+2019-12-12 06:22:36 +0000  copying file ./Payload/E-MeetingNote.app/Frameworks/Alamofire.framework/Info.plist ... 
+741 bytes for ./Payload/E-MeetingNote.app/Frameworks/Alamofire.framework/Info.plist
+copying file ./Payload/E-MeetingNote.app/Frameworks/ObjectMapper.framework/_CodeSignature/CodeResources ... 
+1798 bytes for ./Payload/E-MeetingNote.app/Frameworks/ObjectMapper.framework/_CodeSignature/CodeResources
+copying file ./Payload/E-MeetingNote.app/Frameworks/ObjectMapper.framework/ObjectMapper ... 
+2019-12-12 06:22:36 +0000  1089488 bytes for ./Payload/E-MeetingNote.app/Frameworks/ObjectMapper.framework/ObjectMapper
+2019-12-12 06:22:36 +0000  copying file ./Payload/E-MeetingNote.app/Frameworks/ObjectMapper.framework/Info.plist ... 
+747 bytes for ./Payload/E-MeetingNote.app/Frameworks/ObjectMapper.framework/Info.plist
+copying file ./Payload/E-MeetingNote.app/Frameworks/pdfDrawing.framework/_CodeSignature/CodeResources ... 
+1798 bytes for ./Payload/E-MeetingNote.app/Frameworks/pdfDrawing.framework/_CodeSignature/CodeResources
+copying file ./Payload/E-MeetingNote.app/Frameworks/pdfDrawing.framework/pdfDrawing ... 
+2019-12-12 06:22:36 +0000  368896 bytes for ./Payload/E-MeetingNote.app/Frameworks/pdfDrawing.framework/pdfDrawing
+copying file ./Payload/E-MeetingNote.app/Frameworks/pdfDrawing.framework/Info.plist ... 
+2019-12-12 06:22:36 +0000  791 bytes for ./Payload/E-MeetingNote.app/Frameworks/pdfDrawing.framework/Info.plist
+copying file ./Payload/E-MeetingNote.app/Frameworks/ColorPickTip.framework/_CodeSignature/CodeResources ... 
+1798 bytes for ./Payload/E-MeetingNote.app/Frameworks/ColorPickTip.framework/_CodeSignature/CodeResources
+copying file ./Payload/E-MeetingNote.app/Frameworks/ColorPickTip.framework/ColorPickTip ... 
+2019-12-12 06:22:36 +0000  274576 bytes for ./Payload/E-MeetingNote.app/Frameworks/ColorPickTip.framework/ColorPickTip
+copying file ./Payload/E-MeetingNote.app/Frameworks/ColorPickTip.framework/Info.plist ... 
+2019-12-12 06:22:36 +0000  747 bytes for ./Payload/E-MeetingNote.app/Frameworks/ColorPickTip.framework/Info.plist
+copying file ./Payload/E-MeetingNote.app/embedded.mobileprovision ... 
+10407 bytes for ./Payload/E-MeetingNote.app/embedded.mobileprovision
+copying file ./Payload/E-MeetingNote.app/Info.plist ... 
+2168 bytes for ./Payload/E-MeetingNote.app/Info.plist
+copying file ./Payload/E-MeetingNote.app/PkgInfo ... 
+8 bytes for ./Payload/E-MeetingNote.app/PkgInfo
+copying file ./Payload/E-MeetingNote.app/SwitchAlertAction.nib ... 
+2019-12-12 06:22:36 +0000  2704 bytes for ./Payload/E-MeetingNote.app/SwitchAlertAction.nib
+2019-12-12 06:22:36 +0000  /usr/bin/ditto exited with 0
+2019-12-12 06:22:36 +0000  Processing step: IDEDistributionAppStoreInformationStep
+2019-12-12 06:22:36 +0000  Skipping step: IDEDistributionAppStoreInformationStep because it said so
+2019-12-12 06:22:36 +0000  Processing step: IDEDistributionGenerateProcessedDistributionItems
+2019-12-12 06:22:36 +0000  Processing step: IDEDistributionCreateManifestStep
+2019-12-12 06:22:36 +0000  Skipping step: IDEDistributionCreateManifestStep because it said so

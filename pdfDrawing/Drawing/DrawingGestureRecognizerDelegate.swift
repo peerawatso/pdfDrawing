@@ -17,26 +17,44 @@ import UIKit
 
 public class DrawingGestureRecognizer: UIGestureRecognizer {
     public weak var drawingDelegate: DrawingGestureRecognizerDelegate?
+    public var isbuttonNone : Bool!
+    public var isbuttonApplePen : Bool!
+    
+    convenience init(isbuttonNone: Bool, isbuttonApple: Bool) {
+        self.init()
+        self.isbuttonNone = isbuttonNone
+        self.isbuttonApplePen = isbuttonApple
+    }
+//    init(isbuttonNone: Bool, isbuttonApplePen: Bool) {
+//        self.isbuttonNone = isbuttonNone
+//        self.isbuttonApplePen = isbuttonApplePen
+//        
+//    }
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first,
             //            touch.type == .pencil, // Comment this line to test on simulator without Apple Pencil
             //            touch.type == .pencil,
             let numberOfTouches = event?.allTouches?.count,
             numberOfTouches == 1 {
-            drawingDelegate?.checkNumberOfTouches(numberofTouches: numberOfTouches)
-            
-            state = .began
-            
-            let location = touch.location(in: self.view)
-            let prevlocation = touch.previousLocation(in: self.view)
-            drawingDelegate?.gestureRecognizerBegan?(location, prevlocation)
-            
-//        } else if let numbersOfTouches = event?.allTouches?.count,
-//            numbersOfTouches > 1 {
-//            drawingDelegate?.checkNumberOfTouches(numberofTouches: numbersOfTouches)
-//            state = .failed
-//        } else {
-//            state = .failed
+            if self.isbuttonNone == false{
+                touch.type == .direct
+                drawingDelegate?.checkNumberOfTouches(numberofTouches: numberOfTouches)
+                
+                state = .began
+                
+                let location = touch.location(in: self.view)
+                let prevlocation = touch.previousLocation(in: self.view)
+                drawingDelegate?.gestureRecognizerBegan?(location, prevlocation)
+            } else if self.isbuttonApplePen == true {
+                touch.type == .pencil
+                drawingDelegate?.checkNumberOfTouches(numberofTouches: numberOfTouches)
+                
+                state = .began
+                
+                let location = touch.location(in: self.view)
+                let prevlocation = touch.previousLocation(in: self.view)
+                drawingDelegate?.gestureRecognizerBegan?(location, prevlocation)
+            }
         }
     }
     
@@ -64,3 +82,10 @@ public class DrawingGestureRecognizer: UIGestureRecognizer {
         state = .failed
     }
 }
+
+//extension DrawingGestureRecognizer {
+//   @objc func checkPenAble(isNone: Bool, isApplePen: Bool){
+//        isbuttonNone = isNone
+//        isbuttonApplePen = isApplePen
+//    }
+//}
