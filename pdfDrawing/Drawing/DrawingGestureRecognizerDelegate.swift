@@ -83,9 +83,9 @@ public class DrawingGestureRecognizer: UIGestureRecognizer {
     }
 }
 
-//extension DrawingGestureRecognizer {
-//   @objc func checkPenAble(isNone: Bool, isApplePen: Bool){
-//        isbuttonNone = isNone
-//        isbuttonApplePen = isApplePen
-//    }
-//}
+extension DrawingGestureRecognizer {
+   @objc func checkPenAble(isNone: Bool, isApplePen: Bool){
+        isbuttonNone = isNone
+        isbuttonApplePen = isApplePen
+    }
+}
