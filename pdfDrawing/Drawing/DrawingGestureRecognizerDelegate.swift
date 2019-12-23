@@ -31,13 +31,12 @@ public class DrawingGestureRecognizer: UIGestureRecognizer {
 //        
 //    }
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let touch = touches.first,
-            //            touch.type == .pencil, // Comment this line to test on simulator without Apple Pencil
-            //            touch.type == .pencil,
-            let numberOfTouches = event?.allTouches?.count,
-            numberOfTouches == 1 {
-            if self.isbuttonNone == true{
-                touch.type == .direct
+        if self.isbuttonNone == true {
+            if let touch = touches.first,
+                //            touch.type == .pencil, // Comment this line to test on simulator without Apple Pencil
+                touch.type == .direct,
+                let numberOfTouches = event?.allTouches?.count,
+                numberOfTouches == 1 {
                 drawingDelegate?.checkNumberOfTouches(numberofTouches: numberOfTouches)
                 
                 state = .began
@@ -45,8 +44,13 @@ public class DrawingGestureRecognizer: UIGestureRecognizer {
                 let location = touch.location(in: self.view)
                 let prevlocation = touch.previousLocation(in: self.view)
                 drawingDelegate?.gestureRecognizerBegan?(location, prevlocation)
-            } else if self.isbuttonApplePen == true {
-                touch.type == .pencil
+            }
+        }else if self.isbuttonApplePen == true {
+            if let touch = touches.first,
+                //            touch.type == .pencil, // Comment this line to test on simulator without Apple Pencil
+                touch.type == .pencil,
+                let numberOfTouches = event?.allTouches?.count,
+                numberOfTouches == 1 {
                 drawingDelegate?.checkNumberOfTouches(numberofTouches: numberOfTouches)
                 
                 state = .began
@@ -56,6 +60,31 @@ public class DrawingGestureRecognizer: UIGestureRecognizer {
                 drawingDelegate?.gestureRecognizerBegan?(location, prevlocation)
             }
         }
+//        if let touch = touches.first,
+//            //            touch.type == .pencil, // Comment this line to test on simulator without Apple Pencil
+//            //            touch.type == .pencil,
+//            let numberOfTouches = event?.allTouches?.count,
+//            numberOfTouches == 1 {
+//            if self.isbuttonNone == true{
+//                touch.type == .direct
+//                drawingDelegate?.checkNumberOfTouches(numberofTouches: numberOfTouches)
+//
+//                state = .began
+//
+//                let location = touch.location(in: self.view)
+//                let prevlocation = touch.previousLocation(in: self.view)
+//                drawingDelegate?.gestureRecognizerBegan?(location, prevlocation)
+//            } else if self.isbuttonApplePen == true {
+//                touch.type == .pencil
+//                drawingDelegate?.checkNumberOfTouches(numberofTouches: numberOfTouches)
+//
+//                state = .began
+//
+//                let location = touch.location(in: self.view)
+//                let prevlocation = touch.previousLocation(in: self.view)
+//                drawingDelegate?.gestureRecognizerBegan?(location, prevlocation)
+//            }
+//        }
     }
     
     override public func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
