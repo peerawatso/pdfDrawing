@@ -36,7 +36,7 @@ public class DrawingGestureRecognizer: UIGestureRecognizer {
             //            touch.type == .pencil,
             let numberOfTouches = event?.allTouches?.count,
             numberOfTouches == 1 {
-            if self.isbuttonNone == false{
+            if self.isbuttonNone == true{
                 touch.type == .direct
                 drawingDelegate?.checkNumberOfTouches(numberofTouches: numberOfTouches)
                 
