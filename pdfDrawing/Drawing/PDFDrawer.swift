@@ -161,18 +161,18 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         guard let page = pdfView.page(for: location, nearest: true) else { return }
         currentPage = page
         let convertedPoint = pdfView.convert(location, to: currentPage!)
-        let convertedPoint2 = pdfView.convert(prevLocation, to: currentPage!)
+//        let convertedPoint2 = pdfView.convert(prevLocation, to: currentPage!)
         path = UIBezierPath()
         path?.move(to: convertedPoint)
-        prevPoint = convertedPoint
-        prevPoint2 = convertedPoint2
+//        prevPoint = convertedPoint
+//        prevPoint2 = convertedPoint2
         delegate?.checkSelect()
     }
     
     public func gestureRecognizerMoved(_ location: CGPoint, _ prevLocation: CGPoint) {
         guard let page = currentPage else { return }
         let convertedPoint = pdfView.convert(location, to: page)
-        let convertedPoint2 = pdfView.convert(prevLocation, to: page)
+//        let convertedPoint2 = pdfView.convert(prevLocation, to: page)
         if drawingTool == .eraser {
             if undoAnnotation.count >= 1{
                 removeAnnotationUndo(point: convertedPoint, page: page)
@@ -209,7 +209,7 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
     public func gestureRecognizerEnded(_ location: CGPoint, _ prevlocation: CGPoint) {
         guard let page = currentPage else { return }
         let convertedPoint = pdfView.convert(location, to: page)
-        let convertedPoint2 = pdfView.convert(prevlocation, to: page)
+//        let convertedPoint2 = pdfView.convert(prevlocation, to: page)
         // Erasing
         if drawingTool == .eraser {
             if undoAnnotation.count >= 1{

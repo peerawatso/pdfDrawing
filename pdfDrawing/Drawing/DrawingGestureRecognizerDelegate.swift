@@ -9,9 +9,9 @@
 import UIKit
 
 @objc public protocol DrawingGestureRecognizerDelegate: class {
-    @objc optional func gestureRecognizerBegan(_ location: CGPoint, _ prevLocation: CGPoint)
-    @objc optional func gestureRecognizerMoved(_ location: CGPoint, _ prevLocation: CGPoint)
-    @objc optional func gestureRecognizerEnded(_ location: CGPoint, _ prevLocation: CGPoint)
+    @objc optional func gestureRecognizerBegan(_ location: CGPoint)
+    @objc optional func gestureRecognizerMoved(_ location: CGPoint)
+    @objc optional func gestureRecognizerEnded(_ location: CGPoint)
     func checkNumberOfTouches(numberofTouches: Int)
 }
 
@@ -70,8 +70,8 @@ public class DrawingGestureRecognizer: UIGestureRecognizer {
             state = .began
             
             let location = touch.location(in: self.view)
-            let prevlocation = touch.previousLocation(in: self.view)
-            drawingDelegate?.gestureRecognizerBegan?(location, prevlocation)
+//            let prevlocation = touch.previousLocation(in: self.view)
+            drawingDelegate?.gestureRecognizerBegan?(location)
         }
     }
     
@@ -79,8 +79,8 @@ public class DrawingGestureRecognizer: UIGestureRecognizer {
         state = .changed
         
         guard let location = touches.first?.location(in: self.view) else { return }
-        guard let prevlocation = touches.first?.previousLocation(in: self.view) else { return }
-        drawingDelegate?.gestureRecognizerMoved?(location, prevlocation)
+//        guard let prevlocation = touches.first?.previousLocation(in: self.view) else { return }
+        drawingDelegate?.gestureRecognizerMoved?(location)
     }
     
     override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -88,10 +88,10 @@ public class DrawingGestureRecognizer: UIGestureRecognizer {
             state = .ended
             return
         }
-        guard let prevlocation = touches.first?.previousLocation(in: self.view) else {
-            return
-        }
-        drawingDelegate?.gestureRecognizerEnded?(location, prevlocation)
+//        guard let prevlocation = touches.first?.previousLocation(in: self.view) else {
+//            return
+//        }
+        drawingDelegate?.gestureRecognizerEnded?(location)
         state = .ended
     }
     
