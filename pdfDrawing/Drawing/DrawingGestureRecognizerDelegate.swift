@@ -34,7 +34,7 @@ public class DrawingGestureRecognizer: UIGestureRecognizer {
         if self.isbuttonNone == true {
             if let touch = touches.first,
                 //            touch.type == .pencil, // Comment this line to test on simulator without Apple Pencil
-                touch.type == .direct,
+//                touch.type == .direct,
                 let numberOfTouches = event?.allTouches?.count,
                 numberOfTouches == 1 {
                 drawingDelegate?.checkNumberOfTouches(numberofTouches: numberOfTouches)
