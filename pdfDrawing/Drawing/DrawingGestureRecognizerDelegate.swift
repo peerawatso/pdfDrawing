@@ -20,7 +20,7 @@ public class DrawingGestureRecognizer: UIGestureRecognizer {
     public var isbuttonNone : Bool!
     public var isbuttonApplePen : Bool!
     
-    convenience init(isbuttonNone: Bool, isbuttonApple: Bool) {
+   public convenience init(isbuttonNone: Bool, isbuttonApple: Bool) {
         self.init()
         self.isbuttonNone = isbuttonNone
         self.isbuttonApplePen = isbuttonApple
