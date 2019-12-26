@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-extension CGRect {
+public extension CGRect {
     
     /// Expands rectangle (self) to include additional point
     ///

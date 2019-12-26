@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-extension CGPoint {
+public extension CGPoint {
     
     /// Create a rectangle using two points
     ///

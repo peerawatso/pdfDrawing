@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIColor {
+public extension UIColor {
     class func pdfBackgroundBlue() -> UIColor {
         return pdfBackgroundBlueColor
     }

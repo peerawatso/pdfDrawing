@@ -10,22 +10,22 @@ import Foundation
 import PDFKit
 
 public class DrawingTextAnnotation: MyPDFAnnotaion {
-    public var path = UIBezierPath()
+//    public var path = UIBezierPath()
     weak public var pdfView: PDFView!
     public var currentPage: PDFPage?
 
-    func completed() {
-        add(path)
-    }
+//    func completed() {
+//        add(path)
+//    }
     
    
-    var text: String = "" {
+    public var text: String = "" {
         didSet {
             view.text = text
         }
     }
     
-    var rect: CGRect = CGRect.zero {
+    public var rect: CGRect = CGRect.zero {
         didSet {
             view.frame = self.rect
         }
@@ -101,18 +101,18 @@ public class DrawingTextAnnotation: MyPDFAnnotaion {
     }
     
      // Helper function inserted by Swift 4.2 migrator.
-     fileprivate func convertFromNSAttributedStringKey(_ input: NSAttributedString.Key) -> String {
+     public func convertFromNSAttributedStringKey(_ input: NSAttributedString.Key) -> String {
          return input.rawValue
      }
 
      // Helper function inserted by Swift 4.2 migrator.
-     fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
+     public func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
          guard let input = input else { return nil }
          return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
      }
 }
 
-extension DrawingTextAnnotation: ResizableViewDelegate {
+ extension DrawingTextAnnotation: ResizableViewDelegate {
     public func resizableViewDidBeginEditing(view: ResizableView) {}
 
     public func resizableViewDidEndEditing(view: ResizableView) {
@@ -124,13 +124,13 @@ extension DrawingTextAnnotation: ResizableViewDelegate {
 //    }
 }
 
-extension DrawingTextAnnotation: PDFAnnotationButtonable {
+ extension DrawingTextAnnotation: PDFAnnotationButtonable {
 
     public static var name: String? { return "Text" }
 //    public static var buttonImage: UIImage? { return UIImage.bundledImage("text-symbol") }
 }
 
-extension DrawingTextAnnotation: UITextViewDelegate {
+ extension DrawingTextAnnotation: UITextViewDelegate {
     public func textViewDidChange(_ textView: UITextView) {
         textView.sizeToFit()
         
@@ -170,15 +170,15 @@ public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
         ]
     }
     
-    var textView: UITextView = UITextView()
+   public var textView: UITextView = UITextView()
     
-    var text: String = "" {
+   public var text: String = "" {
         didSet {
             textView.text = text
         }
     }
     
-    var font: UIFont = UIFont.systemFont(ofSize: 14.0) {
+   public var font: UIFont = UIFont.systemFont(ofSize: 14.0) {
         didSet {
             textView.font = self.font
         }
@@ -190,7 +190,7 @@ public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
         }
     }
     
-    convenience init(parent: DrawingTextAnnotation) {
+    public convenience init(parent: DrawingTextAnnotation) {
         
         self.init()
         
@@ -210,7 +210,7 @@ public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
         self.addSubview(textView)
     }
     
-    @objc func menuActionEdit(_ sender: Any!) {
+    @objc public func menuActionEdit(_ sender: Any!) {
 //        self.delegate?.resizableViewDidSelectAction(view: self, action: "edit")
         
         self.isLocked = true
@@ -218,7 +218,7 @@ public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
         self.textView.becomeFirstResponder()
     }
     
-    override open func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
+    override public func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
         
         if action == #selector(menuActionEdit(_:)) {
             return true
