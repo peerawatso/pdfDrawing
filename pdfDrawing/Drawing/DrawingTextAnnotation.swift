@@ -84,7 +84,8 @@ public class DrawingTextAnnotation: MyPDFAnnotaion{
     public override func draw(with box: PDFDisplayBox, in context: CGContext) {
         UIGraphicsPushContext(context)
         context.setAlpha(1.0)
-        
+        let nsText = self.text as NSString
+
         let paragraphStyle = NSParagraphStyle.default.mutableCopy() as! NSMutableParagraphStyle
         paragraphStyle.alignment = .left
         let attributes: [String:AnyObject] = [
@@ -92,6 +93,12 @@ public class DrawingTextAnnotation: MyPDFAnnotaion{
             convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor): UIColor.black,
             convertFromNSAttributedStringKey(NSAttributedString.Key.paragraphStyle): paragraphStyle
         ]
+        let size = nsText.size(withAttributes: convertToOptionalNSAttributedStringKeyDictionary(attributes))
+        let textRect = CGRect(origin: rect.origin, size: size)
+        
+        nsText.draw(in: textRect, withAttributes: convertToOptionalNSAttributedStringKeyDictionary(attributes))
+        
+        UIGraphicsPopContext()
     }
     
      // Helper function inserted by Swift 4.2 migrator.
