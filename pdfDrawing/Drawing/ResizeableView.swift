@@ -34,7 +34,7 @@ protocol ResizableViewDelegate {
 //    func resizableViewDidSelectAction(view: ResizableView, action: String)
 }
 
-open class ResizableView: UIView {
+public class ResizableView: UIView {
     
     lazy var borderView: ResizableBorderView = {
         return ResizableBorderView(frame: self.bounds.insetBy(dx: ResizableView.globalInset, dy: ResizableView.globalInset))

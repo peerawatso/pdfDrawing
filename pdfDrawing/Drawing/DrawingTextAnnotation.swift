@@ -9,8 +9,7 @@
 import Foundation
 import PDFKit
 
-
-public class DrawingTextAnnotation: MyPDFAnnotaion{
+public class DrawingTextAnnotation: MyPDFAnnotaion {
     public var path = UIBezierPath()
     weak public var pdfView: PDFView!
     public var currentPage: PDFPage?
@@ -155,7 +154,7 @@ extension DrawingTextAnnotation: UITextViewDelegate {
     }
 }
 
-class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
+ class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
     var parent: MyPDFAnnotaion?
     override var canBecomeFirstResponder: Bool { return true }
     override var menuItems: [UIMenuItem] {
