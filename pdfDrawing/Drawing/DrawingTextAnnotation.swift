@@ -7,13 +7,13 @@
 //
 
 import Foundation
+import UIKit
 import PDFKit
 
 public class DrawingTextAnnotation: MyPDFAnnotaion {
 //    public var path = UIBezierPath()
     weak public var pdfView: PDFView!
     public var currentPage: PDFPage?
-
 //    func completed() {
 //        add(path)
 //    }
