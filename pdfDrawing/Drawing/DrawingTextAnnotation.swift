@@ -113,9 +113,9 @@ public class DrawingTextAnnotation: MyPDFAnnotaion {
 }
 
 extension DrawingTextAnnotation: ResizableViewDelegate {
-    func resizableViewDidBeginEditing(view: ResizableView) {}
+    public func resizableViewDidBeginEditing(view: ResizableView) {}
 
-    func resizableViewDidEndEditing(view: ResizableView) {
+    public func resizableViewDidEndEditing(view: ResizableView) {
         self.rect = self.view.frame
     }
 
@@ -154,9 +154,9 @@ extension DrawingTextAnnotation: UITextViewDelegate {
     }
 }
 
- class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
-    var parent: MyPDFAnnotaion?
-    override var canBecomeFirstResponder: Bool { return true }
+public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
+    public var parent: MyPDFAnnotaion?
+    override public var canBecomeFirstResponder: Bool { return true }
     override var menuItems: [UIMenuItem] {
         return [
             UIMenuItem(
@@ -184,7 +184,7 @@ extension DrawingTextAnnotation: UITextViewDelegate {
         }
     }
     
-    override var frame: CGRect {
+    override public var frame: CGRect {
         didSet {
             textView.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
         }

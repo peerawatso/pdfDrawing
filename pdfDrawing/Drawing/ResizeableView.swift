@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct ResizableViewAnchorPoint {
+public struct ResizableViewAnchorPoint {
     var adjustsX: CGFloat
     var adjustsY: CGFloat
     var adjustsH: CGFloat
@@ -23,12 +23,12 @@ struct ResizableViewAnchorPoint {
     }
 }
 
-struct CGPointResizableViewAnchorPointPair {
+public struct CGPointResizableViewAnchorPointPair {
     var point: CGPoint
     var anchorPoint: ResizableViewAnchorPoint
 }
 
-protocol ResizableViewDelegate {
+public protocol ResizableViewDelegate {
     func resizableViewDidBeginEditing(view: ResizableView)
     func resizableViewDidEndEditing(view: ResizableView)
 //    func resizableViewDidSelectAction(view: ResizableView, action: String)
@@ -358,7 +358,7 @@ public class ResizableView: UIView {
     }
 }
 
-class ResizableBorderView: UIView {
+public class ResizableBorderView: UIView {
     
     static let borderSize: CGFloat = 10.0
     static let handleSize: CGFloat = 10.0
@@ -376,7 +376,7 @@ class ResizableBorderView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func draw(_ rect: CGRect) {
+    override public func draw(_ rect: CGRect) {
         guard let context = UIGraphicsGetCurrentContext() else { return }
         context.saveGState()
         
