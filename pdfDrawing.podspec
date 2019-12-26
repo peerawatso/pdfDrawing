@@ -17,5 +17,6 @@ Pod::Spec.new do |spec|
 
   spec.subspec 'pdfDrawing' do |ss|
     ss.source_files = 'pdfDrawing/Drawing/**'
+    ss.source_files = 'pdfDrawing/Extension/**'
   end
 end
