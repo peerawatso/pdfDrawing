@@ -284,6 +284,10 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         }
     }
     
+    private func createTextAnnotation(){
+        
+    }
+    
     private func createAnnotation(path: UIBezierPath, page: PDFPage, point: CGPoint) -> DrawingAnnotation {
         let annotation = DrawingAnnotation(bounds: page.bounds(for: pdfView.displayBox), forType: .ink, withProperties: nil)
         let uuid = UUID().uuidString
@@ -559,5 +563,27 @@ public class MyPDFAnnotaion : PDFAnnotation {
     open var alphaCurrent: CGFloat?
     open var StringPointCurrent : String?
     open var toolCurrent: String?
+    
+    
 }
+
+public protocol PDFAnnotationView {
+    var parent: MyPDFAnnotaion? { get }
+    var canBecomeFirstResponder: Bool { get }
+}
+
+public protocol PDFAnnotationButtonable: PDFAnnotation {
+    
+    /// Name for UIBarButtonItem representation of annotation
+    static var name: String? { get }
+    
+    /// Image for UIBarButtonItem representation of annotation
+//    static var buttonImage: UIImage? { get }
+}
+
+public protocol PDFAnnotationEvent {
+    func annotationUpdated(annotation: PDFAnnotation)
+    func annotation(annotation: PDFAnnotation, selected action: String)
+}
+
 

@@ -17,6 +17,12 @@
 		71F15934231A834D00C3FEEC /* DrawingGestureRecognizerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F15933231A834D00C3FEEC /* DrawingGestureRecognizerDelegate.swift */; };
 		71F15936231A83A000C3FEEC /* PDFAnnotationWithPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F15935231A83A000C3FEEC /* PDFAnnotationWithPath.swift */; };
 		71F15938231A83DC00C3FEEC /* PDFPage+Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F15937231A83DC00C3FEEC /* PDFPage+Selection.swift */; };
+		71F1614A23B32E1A00B6433E /* ResizeableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F1614923B32E1A00B6433E /* ResizeableView.swift */; };
+		71F1614C23B3337A00B6433E /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F1614B23B3337A00B6433E /* CGPoint.swift */; };
+		71F1614E23B3340B00B6433E /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F1614D23B3340B00B6433E /* CGRect.swift */; };
+		71F1615023B3465C00B6433E /* DrawingTextAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F1614F23B3465C00B6433E /* DrawingTextAnnotation.swift */; };
+		71F1615323B36DFE00B6433E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F1615223B36DFE00B6433E /* UIColor.swift */; };
+		71F1615523B36F2000B6433E /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F1615423B36F2000B6433E /* UIImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,12 @@
 		71F15933231A834D00C3FEEC /* DrawingGestureRecognizerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingGestureRecognizerDelegate.swift; sourceTree = "<group>"; };
 		71F15935231A83A000C3FEEC /* PDFAnnotationWithPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFAnnotationWithPath.swift; sourceTree = "<group>"; };
 		71F15937231A83DC00C3FEEC /* PDFPage+Selection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PDFPage+Selection.swift"; sourceTree = "<group>"; };
+		71F1614923B32E1A00B6433E /* ResizeableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizeableView.swift; sourceTree = "<group>"; };
+		71F1614B23B3337A00B6433E /* CGPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
+		71F1614D23B3340B00B6433E /* CGRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
+		71F1614F23B3465C00B6433E /* DrawingTextAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingTextAnnotation.swift; sourceTree = "<group>"; };
+		71F1615223B36DFE00B6433E /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		71F1615423B36F2000B6433E /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,7 @@
 		71F1591B231A715300C3FEEC /* pdfDrawing */ = {
 			isa = PBXGroup;
 			children = (
+				71F1615123B36DD000B6433E /* Extension */,
 				71F1592E231A808C00C3FEEC /* Drawing */,
 				71F1591C231A715300C3FEEC /* AppDelegate.swift */,
 				71F1591E231A715300C3FEEC /* ViewController.swift */,
@@ -83,8 +96,21 @@
 				71F15933231A834D00C3FEEC /* DrawingGestureRecognizerDelegate.swift */,
 				71F15935231A83A000C3FEEC /* PDFAnnotationWithPath.swift */,
 				71F15937231A83DC00C3FEEC /* PDFPage+Selection.swift */,
+				71F1614923B32E1A00B6433E /* ResizeableView.swift */,
+				71F1614F23B3465C00B6433E /* DrawingTextAnnotation.swift */,
 			);
 			path = Drawing;
+			sourceTree = "<group>";
+		};
+		71F1615123B36DD000B6433E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				71F1614B23B3337A00B6433E /* CGPoint.swift */,
+				71F1614D23B3340B00B6433E /* CGRect.swift */,
+				71F1615223B36DFE00B6433E /* UIColor.swift */,
+				71F1615423B36F2000B6433E /* UIImage.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,12 +185,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				71F15936231A83A000C3FEEC /* PDFAnnotationWithPath.swift in Sources */,
+				71F1614E23B3340B00B6433E /* CGRect.swift in Sources */,
 				71F15930231A80C500C3FEEC /* PDFDrawer.swift in Sources */,
 				71F15938231A83DC00C3FEEC /* PDFPage+Selection.swift in Sources */,
 				71F15934231A834D00C3FEEC /* DrawingGestureRecognizerDelegate.swift in Sources */,
+				71F1615023B3465C00B6433E /* DrawingTextAnnotation.swift in Sources */,
+				71F1614A23B32E1A00B6433E /* ResizeableView.swift in Sources */,
 				71F15932231A82FA00C3FEEC /* DrawingAnnotation.swift in Sources */,
+				71F1615323B36DFE00B6433E /* UIColor.swift in Sources */,
 				71F1591F231A715300C3FEEC /* ViewController.swift in Sources */,
+				71F1614C23B3337A00B6433E /* CGPoint.swift in Sources */,
 				71F1591D231A715300C3FEEC /* AppDelegate.swift in Sources */,
+				71F1615523B36F2000B6433E /* UIImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
