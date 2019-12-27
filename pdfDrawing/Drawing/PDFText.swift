@@ -59,10 +59,10 @@ public class PDFText: MyPDFAnnotaion {
 }
 
 extension PDFText: DrawingGestureTextDelegate {
-    public func mutableView() -> UIView {
-         view = PDFTextAnnotationView(parent: self)
-         return view
-     }
+//    public func mutableView() -> UIView {
+//         view = PDFTextAnnotationView(parent: self)
+//         return view
+//     }
     
     public func gestureRecognizerBegan(_ touch: UITouch, _ location: CGPoint) {
         if rect == CGRect.zero {
