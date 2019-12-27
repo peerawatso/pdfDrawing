@@ -13,6 +13,8 @@ import UIKit
 public class PDFText: MyPDFAnnotaion {
     weak public var pdfView: PDFView!
     public var currentPage: PDFPage?
+    public var delegate: PDFAnnotationEvent?
+
     //    func completed() {
     //        add(path)
     //    }
@@ -167,7 +169,7 @@ public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
         self.init()
         
         self.parent = parent
-//        self.delegate = parent
+        self.delegate = parent
         self.frame = parent.rect
         self.text = parent.text
         self.font = parent.font!
