@@ -86,8 +86,16 @@ extension PDFText: DrawingGestureTextDelegate {
     }
     
     public func drawAnnotation(page: PDFPage){
-         let annotation = PDFAnnotation(bounds: page.bounds(for: pdfView.displayBox), forType: .freeText, withProperties:    nil)
-         page.addAnnotation(annotation)
+//         let annotation = PDFAnnotation(bounds: page.bounds(for: pdfView.displayBox), forType: .freeText, withProperties:    nil)
+//         page.addAnnotation(annotation)
+        var textFieldMultiline21 = PDFAnnotation()
+        let textFieldMultilineBounds21 = CGRect(x: 27, y: 58+2, width: 339, height: 508)
+        textFieldMultiline21 = PDFAnnotation(bounds: textFieldMultilineBounds21, forType: PDFAnnotationSubtype(rawValue: PDFAnnotationSubtype.widget.rawValue), withProperties: nil)
+        textFieldMultiline21.widgetFieldType = PDFAnnotationWidgetSubtype(rawValue: PDFAnnotationWidgetSubtype.text.rawValue)
+        textFieldMultiline21.backgroundColor = UIColor.clear
+        textFieldMultiline21.font = UIFont.systemFont(ofSize: 18)
+        textFieldMultiline21.isMultiline = true
+        page.addAnnotation(textFieldMultiline21)
      }
 }
 
@@ -112,22 +120,22 @@ extension PDFText: ResizableViewDelegate {
  extension PDFText: UITextViewDelegate {
     public func textViewDidChange(_ textView: UITextView) {
         textView.sizeToFit()
-        
+
         var width: CGFloat = 150.0
         if self.view.frame.width > width {
             width = self.view.frame.width
         }
-        
+
         rect = CGRect(x: self.view.frame.origin.x,
                       y: self.view.frame.origin.y,
                       width: width,
                       height: self.view.frame.height)
-        
+
         if text != textView.text {
             text = textView.text
         }
     }
-    
+
     public func textViewDidEndEditing(_ textView: UITextView) {
         textView.isUserInteractionEnabled = false
     }
@@ -148,57 +156,57 @@ public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
             )
         ]
     }
-    
+
    public var textView: UITextView = UITextView()
-    
+
    public var text: String = "" {
         didSet {
             textView.text = text
         }
     }
-    
+
    public var font: UIFont = UIFont.systemFont(ofSize: 14.0) {
         didSet {
             textView.font = self.font
         }
     }
-    
+
     override public var frame: CGRect {
         didSet {
             textView.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
         }
     }
-    
+
     public convenience init(parent: PDFText) {
-        
+
         self.init()
-        
+
         self.parent = parent
         self.delegate = parent
         self.frame = parent.rect
         self.text = parent.text
         self.font = parent.font!
-        
+
         self.textView.text = parent.text
         self.textView.delegate = parent
         self.textView.isUserInteractionEnabled = false
         self.textView.backgroundColor = UIColor.clear
-        
-        self.backgroundColor = UIColor.clear
-        
+
+//        self.backgroundColor = UIColor.clear
+
         self.addSubview(textView)
     }
-    
+
     @objc public func menuActionEdit(_ sender: Any!) {
 //        self.delegate?.resizableViewDidSelectAction(view: self, action: "edit")
-        
+
         self.isLocked = true
         self.textView.isUserInteractionEnabled = true
         self.textView.becomeFirstResponder()
     }
-    
+
     override public func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
-        
+
         if action == #selector(menuActionEdit(_:)) {
             return true
         }
