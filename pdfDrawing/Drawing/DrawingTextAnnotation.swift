@@ -17,20 +17,19 @@ public class DrawingTextAnnotation: MyPDFAnnotaion {
 //    func completed() {
 //        add(path)
 //    }
-    
-   
+
     public var text: String = "" {
         didSet {
             view.text = text
         }
     }
-    
+
     public var rect: CGRect = CGRect.zero {
         didSet {
             view.frame = self.rect
         }
     }
-    
+
     override public var font: UIFont?  {
         didSet{
             view.font = self.font!
@@ -42,43 +41,43 @@ public class DrawingTextAnnotation: MyPDFAnnotaion {
 //        }
 //    }
     
-    lazy var view: PDFTextAnnotationView = PDFTextAnnotationView(parent: self)
-    
+    lazy var view: PDFTextAnnotationView1 = PDFTextAnnotationView1(parent: self)
+
     fileprivate var isEditing: Bool = false
     
 //    override required public init() { super.init() }
     
-    public func didEnd() {
-        self.view.hideEditingHandles()
-        self.view.textView.resignFirstResponder()
-        self.view.textView.isUserInteractionEnabled = false
-    }
+//    public func didEnd() {
+//        self.view.hideEditingHandles()
+//        self.view.textView.resignFirstResponder()
+//        self.view.textView.isUserInteractionEnabled = false
+//    }
     
-    public func touchStarted(_ touch: UITouch, point: CGPoint) {
-        if rect == CGRect.zero {
-            rect = CGRect(origin: point, size: CGSize(width: 150, height: 48))
-        }
-        guard let page = pdfView.page(for: point, nearest: true) else { return }
-        currentPage = page
-        self.view.touchesBegan([touch], with: nil)
-    }
-    
-    public func touchMoved(_ touch: UITouch, point: CGPoint) {
-        guard let page = currentPage else { return }
-        self.view.touchesMoved([touch], with: nil)
-        drawAnnotation(page: page)
-    }
-    
-    public func touchEnded(_ touch: UITouch, point: CGPoint) {
-        guard let page = currentPage else { return }
-        self.view.touchesEnded([touch], with: nil)
-        drawAnnotation(page: page)
-    }
-    
-    public func drawAnnotation(page: PDFPage){
-        let annotation = PDFAnnotation(bounds: page.bounds(for: pdfView.displayBox), forType: .freeText, withProperties:    nil)
-        page.addAnnotation(annotation)
-    }
+//    public func touchStarted(_ touch: UITouch, point: CGPoint) {
+//        if rect == CGRect.zero {
+//            rect = CGRect(origin: point, size: CGSize(width: 150, height: 48))
+//        }
+//        guard let page = pdfView.page(for: point, nearest: true) else { return }
+//        currentPage = page
+//        self.view.touchesBegan([touch], with: nil)
+//    }
+//
+//    public func touchMoved(_ touch: UITouch, point: CGPoint) {
+//        guard let page = currentPage else { return }
+//        self.view.touchesMoved([touch], with: nil)
+//        drawAnnotation(page: page)
+//    }
+//
+//    public func touchEnded(_ touch: UITouch, point: CGPoint) {
+//        guard let page = currentPage else { return }
+//        self.view.touchesEnded([touch], with: nil)
+//        drawAnnotation(page: page)
+//    }
+//
+//    public func drawAnnotation(page: PDFPage){
+//        let annotation = PDFAnnotation(bounds: page.bounds(for: pdfView.displayBox), forType: .freeText, withProperties:    nil)
+//        page.addAnnotation(annotation)
+//    }
     
     public override func draw(with box: PDFDisplayBox, in context: CGContext) {
         UIGraphicsPushContext(context)
@@ -112,49 +111,51 @@ public class DrawingTextAnnotation: MyPDFAnnotaion {
      }
 }
 
- extension DrawingTextAnnotation: ResizableViewDelegate {
-    public func resizableViewDidBeginEditing(view: ResizableView) {}
 
-    public func resizableViewDidEndEditing(view: ResizableView) {
-        self.rect = self.view.frame
-    }
 
-//    func resizableViewDidSelectAction(view: ResizableView, action: String) {
-//        self.delegate?.annotation(annotation: self, selected: action)
+//extension DrawingTextAnnotation: ResizableViewDelegate {
+//    public func resizableViewDidBeginEditing(view: ResizableView) {}
+//
+//    public func resizableViewDidEndEditing(view: ResizableView) {
+//        self.rect = self.view.frame
 //    }
-}
-
- extension DrawingTextAnnotation: PDFAnnotationButtonable {
-
-    public static var name: String? { return "Text" }
-//    public static var buttonImage: UIImage? { return UIImage.bundledImage("text-symbol") }
-}
-
- extension DrawingTextAnnotation: UITextViewDelegate {
-    public func textViewDidChange(_ textView: UITextView) {
-        textView.sizeToFit()
-        
-        var width: CGFloat = 150.0
-        if self.view.frame.width > width {
-            width = self.view.frame.width
-        }
-        
-        rect = CGRect(x: self.view.frame.origin.x,
-                      y: self.view.frame.origin.y,
-                      width: width,
-                      height: self.view.frame.height)
-        
-        if text != textView.text {
-            text = textView.text
-        }
-    }
-    
-    public func textViewDidEndEditing(_ textView: UITextView) {
-        textView.isUserInteractionEnabled = false
-    }
-}
-
-public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
+//
+////    func resizableViewDidSelectAction(view: ResizableView, action: String) {
+////        self.delegate?.annotation(annotation: self, selected: action)
+////    }
+//}
+//
+// extension DrawingTextAnnotation: PDFAnnotationButtonable {
+//
+//    public static var name: String? { return "Text" }
+////    public static var buttonImage: UIImage? { return UIImage.bundledImage("text-symbol") }
+//}
+//
+// extension DrawingTextAnnotation: UITextViewDelegate {
+//    public func textViewDidChange(_ textView: UITextView) {
+//        textView.sizeToFit()
+//
+//        var width: CGFloat = 150.0
+//        if self.view.frame.width > width {
+//            width = self.view.frame.width
+//        }
+//
+//        rect = CGRect(x: self.view.frame.origin.x,
+//                      y: self.view.frame.origin.y,
+//                      width: width,
+//                      height: self.view.frame.height)
+//
+//        if text != textView.text {
+//            text = textView.text
+//        }
+//    }
+//
+//    public func textViewDidEndEditing(_ textView: UITextView) {
+//        textView.isUserInteractionEnabled = false
+//    }
+//}
+//
+public class PDFTextAnnotationView1: ResizableView, PDFAnnotationView {
     public var parent: MyPDFAnnotaion?
     override public var canBecomeFirstResponder: Bool { return true }
     override var menuItems: [UIMenuItem] {
@@ -195,13 +196,13 @@ public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
         self.init()
         
         self.parent = parent
-        self.delegate = parent
+        self.delegate = parent as! ResizableViewDelegate
         self.frame = parent.rect
         self.text = parent.text
         self.font = parent.font!
         
         self.textView.text = parent.text
-        self.textView.delegate = parent
+        self.textView.delegate = parent as! UITextViewDelegate
         self.textView.isUserInteractionEnabled = false
         self.textView.backgroundColor = UIColor.clear
         
@@ -226,4 +227,6 @@ public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
         return super.canPerformAction(action, withSender: sender)
     }
 }
+
+
 

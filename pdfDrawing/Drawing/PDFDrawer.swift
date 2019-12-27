@@ -284,10 +284,6 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         }
     }
     
-    private func createTextAnnotation(){
-        
-    }
-    
     private func createAnnotation(path: UIBezierPath, page: PDFPage, point: CGPoint) -> DrawingAnnotation {
         let annotation = DrawingAnnotation(bounds: page.bounds(for: pdfView.displayBox), forType: .ink, withProperties: nil)
         let uuid = UUID().uuidString
