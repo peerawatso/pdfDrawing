@@ -84,7 +84,7 @@ extension PDFText: DrawingGestureTextDelegate {
      }
 }
 
-extension DrawingTextAnnotation: ResizableViewDelegate {
+extension PDFText: ResizableViewDelegate {
     public func resizableViewDidBeginEditing(view: ResizableView) {}
 
     public func resizableViewDidEndEditing(view: ResizableView) {
@@ -96,13 +96,13 @@ extension DrawingTextAnnotation: ResizableViewDelegate {
 //    }
 }
 
- extension DrawingTextAnnotation: PDFAnnotationButtonable {
+ extension PDFText: PDFAnnotationButtonable {
 
     public static var name: String? { return "Text" }
 //    public static var buttonImage: UIImage? { return UIImage.bundledImage("text-symbol") }
 }
 
- extension DrawingTextAnnotation: UITextViewDelegate {
+ extension PDFText: UITextViewDelegate {
     public func textViewDidChange(_ textView: UITextView) {
         textView.sizeToFit()
         
@@ -167,13 +167,13 @@ public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
         self.init()
         
         self.parent = parent
-        self.delegate = parent as! ResizableViewDelegate
+//        self.delegate = parent
         self.frame = parent.rect
         self.text = parent.text
         self.font = parent.font!
         
         self.textView.text = parent.text
-        self.textView.delegate = parent as! UITextViewDelegate
+        self.textView.delegate = parent
         self.textView.isUserInteractionEnabled = false
         self.textView.backgroundColor = UIColor.clear
         
