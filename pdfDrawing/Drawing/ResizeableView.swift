@@ -113,12 +113,12 @@ public class ResizableView: UIView {
     func hideEditingHandles() {
         self.borderView.isHidden = true
         self.isLocked = false
-        self.hideMenuController()
+//        self.hideMenuController()
     }
     
     func showEditingHandles() {
         self.borderView.isHidden = false
-        self.showMenuController()
+//        self.showMenuController()
     }
     
     
@@ -202,7 +202,7 @@ public class ResizableView: UIView {
         /// Call delegate method
         self.delegate?.resizableViewDidEndEditing(view: self)
         super.touchesEnded(touches, with: event)
-        self.showMenuController()
+//        self.showMenuController()
     }
     
     override open func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -219,7 +219,7 @@ public class ResizableView: UIView {
             let superview = self.superview else { return }
         
         super.touchesMoved(touches, with: event)
-        self.hideMenuController()
+//        self.hideMenuController()
         
         if self.isLocked { return }
         if self.isResizing {
@@ -333,18 +333,18 @@ public class ResizableView: UIView {
     
 //    //MARK: Context Menu Methods
 //    func showMenuController() {
-//        
+//
 //        self.becomeFirstResponder()
 //        UIMenuController.shared.setTargetRect(self.frame, in: self.superview!)
 //        UIMenuController.shared.menuItems = self.menuItems
 //        UIMenuController.shared.setMenuVisible(true, animated: true)
 //    }
-//    
+//
 //    func hideMenuController() {
-//        
+//
 //        self.resignFirstResponder()
 //    }
-//    
+//
     @objc func menuActionDelete(_ sender: Any!) {
 //        self.delegate?.resizableViewDidSelectAction(view: self, action: "delete")
     }
