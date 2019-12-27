@@ -331,20 +331,20 @@ public class ResizableView: UIView {
     }
     
     
-    //MARK: Context Menu Methods
-    func showMenuController() {
-        
-        self.becomeFirstResponder()
-        UIMenuController.shared.setTargetRect(self.frame, in: self.superview!)
-        UIMenuController.shared.menuItems = self.menuItems
-        UIMenuController.shared.setMenuVisible(true, animated: true)
-    }
-    
-    func hideMenuController() {
-        
-        self.resignFirstResponder()
-    }
-    
+//    //MARK: Context Menu Methods
+//    func showMenuController() {
+//        
+//        self.becomeFirstResponder()
+//        UIMenuController.shared.setTargetRect(self.frame, in: self.superview!)
+//        UIMenuController.shared.menuItems = self.menuItems
+//        UIMenuController.shared.setMenuVisible(true, animated: true)
+//    }
+//    
+//    func hideMenuController() {
+//        
+//        self.resignFirstResponder()
+//    }
+//    
     @objc func menuActionDelete(_ sender: Any!) {
 //        self.delegate?.resizableViewDidSelectAction(view: self, action: "delete")
     }
