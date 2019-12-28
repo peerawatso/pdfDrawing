@@ -94,6 +94,7 @@ extension PDFText: DrawingGestureTextDelegate {
         textFieldMultiline21.widgetFieldType = PDFAnnotationWidgetSubtype(rawValue: PDFAnnotationWidgetSubtype.text.rawValue)
         textFieldMultiline21.backgroundColor = UIColor.clear
         textFieldMultiline21.font = UIFont.systemFont(ofSize: 18)
+        textFieldMultiline21.fontColor = .red
         textFieldMultiline21.isMultiline = true
         page.addAnnotation(textFieldMultiline21)
      }
