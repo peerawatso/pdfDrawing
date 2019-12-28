@@ -113,48 +113,48 @@ public class DrawingTextAnnotation: MyPDFAnnotaion {
 
 
 
-//extension DrawingTextAnnotation: ResizableViewDelegate {
-//    public func resizableViewDidBeginEditing(view: ResizableView) {}
-//
-//    public func resizableViewDidEndEditing(view: ResizableView) {
-//        self.rect = self.view.frame
+extension DrawingTextAnnotation: ResizableViewDelegate {
+    public func resizableViewDidBeginEditing(view: ResizableView) {}
+
+    public func resizableViewDidEndEditing(view: ResizableView) {
+        self.rect = self.view.frame
+    }
+
+//    func resizableViewDidSelectAction(view: ResizableView, action: String) {
+//        self.delegate?.annotation(annotation: self, selected: action)
 //    }
-//
-////    func resizableViewDidSelectAction(view: ResizableView, action: String) {
-////        self.delegate?.annotation(annotation: self, selected: action)
-////    }
-//}
-//
-// extension DrawingTextAnnotation: PDFAnnotationButtonable {
-//
-//    public static var name: String? { return "Text" }
-////    public static var buttonImage: UIImage? { return UIImage.bundledImage("text-symbol") }
-//}
-//
-// extension DrawingTextAnnotation: UITextViewDelegate {
-//    public func textViewDidChange(_ textView: UITextView) {
-//        textView.sizeToFit()
-//
-//        var width: CGFloat = 150.0
-//        if self.view.frame.width > width {
-//            width = self.view.frame.width
-//        }
-//
-//        rect = CGRect(x: self.view.frame.origin.x,
-//                      y: self.view.frame.origin.y,
-//                      width: width,
-//                      height: self.view.frame.height)
-//
-//        if text != textView.text {
-//            text = textView.text
-//        }
-//    }
-//
-//    public func textViewDidEndEditing(_ textView: UITextView) {
-//        textView.isUserInteractionEnabled = false
-//    }
-//}
-//
+}
+
+ extension DrawingTextAnnotation: PDFAnnotationButtonable {
+
+    public static var name: String? { return "Text" }
+//    public static var buttonImage: UIImage? { return UIImage.bundledImage("text-symbol") }
+}
+
+ extension DrawingTextAnnotation: UITextViewDelegate {
+    public func textViewDidChange(_ textView: UITextView) {
+        textView.sizeToFit()
+
+        var width: CGFloat = 150.0
+        if self.view.frame.width > width {
+            width = self.view.frame.width
+        }
+
+        rect = CGRect(x: self.view.frame.origin.x,
+                      y: self.view.frame.origin.y,
+                      width: width,
+                      height: self.view.frame.height)
+
+        if text != textView.text {
+            text = textView.text
+        }
+    }
+
+    public func textViewDidEndEditing(_ textView: UITextView) {
+        textView.isUserInteractionEnabled = false
+    }
+}
+
 public class PDFTextAnnotationView1: ResizableView, PDFAnnotationView {
     public var parent: MyPDFAnnotaion?
     override public var canBecomeFirstResponder: Bool { return true }
@@ -196,13 +196,13 @@ public class PDFTextAnnotationView1: ResizableView, PDFAnnotationView {
         self.init()
         
         self.parent = parent
-        self.delegate = parent as! ResizableViewDelegate
+        self.delegate = parent 
         self.frame = parent.rect
         self.text = parent.text
         self.font = parent.font!
         
         self.textView.text = parent.text
-        self.textView.delegate = parent as! UITextViewDelegate
+        self.textView.delegate = parent
         self.textView.isUserInteractionEnabled = false
         self.textView.backgroundColor = UIColor.clear
         
