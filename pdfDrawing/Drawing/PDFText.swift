@@ -88,16 +88,25 @@ extension PDFText: DrawingGestureTextDelegate {
     public func drawAnnotation(page: PDFPage){
 //         let annotation = PDFAnnotation(bounds: page.bounds(for: pdfView.displayBox), forType: .freeText, withProperties:    nil)
 //         page.addAnnotation(annotation)
-        var textFieldMultiline21 = PDFAnnotation()
-        let textFieldMultilineBounds21 = CGRect(x: 27, y: 58+2, width: 339, height: 508)
-        textFieldMultiline21 = PDFAnnotation(bounds: textFieldMultilineBounds21, forType: PDFAnnotationSubtype(rawValue: PDFAnnotationSubtype.widget.rawValue), withProperties: nil)
-        textFieldMultiline21.widgetFieldType = PDFAnnotationWidgetSubtype(rawValue: PDFAnnotationWidgetSubtype.text.rawValue)
-        textFieldMultiline21.backgroundColor = UIColor.clear
-        textFieldMultiline21.hasComb = true
-        textFieldMultiline21.font = UIFont.systemFont(ofSize: 18)
-        textFieldMultiline21.fontColor = .black
-        textFieldMultiline21.isMultiline = true
-        page.addAnnotation(textFieldMultiline21)
+//        var textFieldMultiline21 = PDFAnnotation()
+//        let textFieldMultilineBounds21 = CGRect(x: 27, y: 58+2, width: 339, height: 508)
+//        textFieldMultiline21 = PDFAnnotation(bounds: textFieldMultilineBounds21, forType: PDFAnnotationSubtype(rawValue: PDFAnnotationSubtype.widget.rawValue), withProperties: nil)
+//        textFieldMultiline21.widgetFieldType = PDFAnnotationWidgetSubtype(rawValue: PDFAnnotationWidgetSubtype.text.rawValue)
+//
+//        textFieldMultiline21.backgroundColor = UIColor.clear
+//        textFieldMultiline21.hasComb = true
+//        textFieldMultiline21.font = UIFont.systemFont(ofSize: 18)
+//        textFieldMultiline21.fontColor = .black
+//        textFieldMultiline21.isMultiline = true
+//        page.addAnnotation(textFieldMultiline21)
+        
+        let annotation = PDFAnnotation(bounds: CGRect(x: 100, y: 100, width: 100, height: 20), forType: .freeText, withProperties: nil)
+         annotation.contents = "Hello, world!"
+         annotation.font = UIFont.systemFont(ofSize: 15.0)
+         annotation.fontColor = .blue
+         annotation.color = .clear
+         annotation.bounds = CGRect(x: 10, y: 20, width: 30, height: 40)
+         page.addAnnotation(annotation)
      }
 }
 
