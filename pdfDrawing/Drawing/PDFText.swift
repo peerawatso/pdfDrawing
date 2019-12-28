@@ -100,12 +100,11 @@ extension PDFText: DrawingGestureTextDelegate {
 //        textFieldMultiline21.isMultiline = true
 //        page.addAnnotation(textFieldMultiline21)
         
-        let annotation = PDFAnnotation(bounds: CGRect(x: 100, y: 100, width: 100, height: 20), forType: .freeText, withProperties: nil)
+        let annotation = DrawingTextAnnotation(bounds: CGRect(x: 100, y: 100, width: 100, height: 20), forType: .freeText, withProperties: nil)
          annotation.contents = "Hello, world!"
          annotation.font = UIFont.systemFont(ofSize: 15.0)
          annotation.fontColor = .blue
          annotation.color = .clear
-         annotation.bounds = CGRect(x: 10, y: 20, width: 30, height: 40)
          page.addAnnotation(annotation)
      }
 }
