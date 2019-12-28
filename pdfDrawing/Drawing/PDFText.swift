@@ -59,10 +59,10 @@ public class PDFText: MyPDFAnnotaion {
 }
 
 extension PDFText: DrawingGestureTextDelegate {
-//    public func mutableView() -> UIView {
-//         view = PDFTextAnnotationView(parent: self)
-//         return view
-//     }
+    public func mutableView() -> UIView {
+         view = PDFTextAnnotationView(parent: self)
+         return view
+     }
     
     public func gestureRecognizerBegan(_ touch: UITouch, _ location: CGPoint) {
         if rect == CGRect.zero {
@@ -70,18 +70,18 @@ extension PDFText: DrawingGestureTextDelegate {
         }
         guard let page = pdfView.page(for: location, nearest: true) else { return }
         currentPage = page
-        self.view.touchesBegan([touch], with: nil)
+//        self.view.touchesBegan([touch], with: nil)
     }
     
     public func gestureRecognizerMoved(_ touch: UITouch, _ location: CGPoint) {
         guard let page = currentPage else { return }
-        self.view.touchesMoved([touch], with: nil)
+//        self.view.touchesMoved([touch], with: nil)
         drawAnnotation(page: page)
     }
     
     public func gestureRecognizerEnded(_ touch: UITouch, _ location: CGPoint) {
         guard let page = currentPage else { return }
-        self.view.touchesEnded([touch], with: nil)
+//        self.view.touchesEnded([touch], with: nil)
         drawAnnotation(page: page)
     }
     
