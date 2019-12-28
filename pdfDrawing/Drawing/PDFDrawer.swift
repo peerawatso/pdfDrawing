@@ -156,7 +156,7 @@ public class PDFDrawer {
 }
 
 extension PDFDrawer: DrawingGestureRecognizerDelegate {
-    public func gestureRecognizerBegan(_ location: CGPoint, _ prevLocation: CGPoint) {
+    public func gestureRecognizerBegan(_ location: CGPoint) {
         pdfView.isUserInteractionEnabled = true
         guard let page = pdfView.page(for: location, nearest: true) else { return }
         currentPage = page
@@ -169,7 +169,7 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         delegate?.checkSelect()
     }
     
-    public func gestureRecognizerMoved(_ location: CGPoint, _ prevLocation: CGPoint) {
+    public func gestureRecognizerMoved(_ location: CGPoint) {
         guard let page = currentPage else { return }
         let convertedPoint = pdfView.convert(location, to: page)
 //        let convertedPoint2 = pdfView.convert(prevLocation, to: page)
@@ -206,7 +206,7 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         
     }
     
-    public func gestureRecognizerEnded(_ location: CGPoint, _ prevlocation: CGPoint) {
+    public func gestureRecognizerEnded(_ location: CGPoint) {
         guard let page = currentPage else { return }
         let convertedPoint = pdfView.convert(location, to: page)
 //        let convertedPoint2 = pdfView.convert(prevlocation, to: page)
