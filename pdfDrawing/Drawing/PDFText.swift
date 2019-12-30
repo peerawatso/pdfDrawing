@@ -70,6 +70,7 @@ extension PDFText: DrawingGestureTextDelegate {
         }
         guard let page = pdfView.page(for: location, nearest: true) else { return }
         currentPage = page
+        pdfView.addSubview(mutableView())
         self.view.touchesBegan([touch], with: nil)
     }
     
