@@ -13,6 +13,8 @@ import UIKit
 public class PDFText: MyPDFAnnotaion {
     weak public var pdfView: PDFView!
     public var currentPage: PDFPage?
+//    public let currentAnnotation: PDFAnnotation?
+    public var isTrue: Bool = false
     public var delegate: PDFAnnotationEvent?
 
     //    func completed() {
@@ -70,7 +72,10 @@ extension PDFText: DrawingGestureTextDelegate {
         }
         guard let page = pdfView.page(for: location, nearest: true) else { return }
         currentPage = page
-        pdfView.addSubview(mutableView())
+        if isTrue == false{
+            pdfView.addSubview(mutableView())
+            isTrue = true
+        }
         self.view.touchesBegan([touch], with: nil)
     }
     
