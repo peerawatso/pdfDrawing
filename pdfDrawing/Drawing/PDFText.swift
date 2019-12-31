@@ -75,6 +75,7 @@ extension PDFText: DrawingGestureTextDelegate {
         if isTrue == false{
             pdfView.addSubview(mutableView())
             isTrue = true
+            
         }
         self.view.touchesBegan([touch], with: nil)
     }
