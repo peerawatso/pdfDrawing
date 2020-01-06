@@ -78,6 +78,10 @@ public enum DrawingTool: Int {
         switch self {
         case .highlighter:
             return 0.3 //0,5
+        case .highlightM:
+            return 0.3
+        case .highlightL:
+            return 0.3
         case .none:
             return 0
         default:
