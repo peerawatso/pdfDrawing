@@ -16,6 +16,8 @@ public enum DrawingTool: Int {
     case pen = 12
     case penM = 14
     case highlighter = 13
+    case highlightM = 17
+    case highlightL = 18
     case clear = 15
     case one = 1
     case two = 2
@@ -39,6 +41,10 @@ public enum DrawingTool: Int {
             return 5
         case .highlighter:
             return 10
+        case .highlightM:
+            return 15
+        case .highlightL:
+            return 20
         case .clear:
             return 0
         case .one:
