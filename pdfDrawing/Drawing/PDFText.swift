@@ -112,7 +112,7 @@ extension PDFText: DrawingGestureTextDelegate {
 //         annotation.font = UIFont.systemFont(ofSize: 15.0)
 //         annotation.fontColor = .blue
 //         annotation.color = .clear
-         page.addAnnotation(annotation)
+//         page.addAnnotation(annotation)
      }
 }
 
@@ -158,7 +158,7 @@ extension PDFText: ResizableViewDelegate {
     }
 }
 
-public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
+public class PDFTextAnnotationView: ResizableView, PDFAnnotationView, UITextFieldDelegate {
     public var parent: MyPDFAnnotaion?
     override public var canBecomeFirstResponder: Bool { return true }
     override var menuItems: [UIMenuItem] {
