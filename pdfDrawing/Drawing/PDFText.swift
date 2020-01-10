@@ -10,7 +10,7 @@ import Foundation
 import PDFKit
 import UIKit
 
-public class PDFText: MyPDFAnnotaion {
+public class PDFText: MyPDFAnnotaion, UITextFieldDelegate {
     weak public var pdfView: PDFView!
     public var currentPage: PDFPage?
 //    public let currentAnnotation: PDFAnnotation?
