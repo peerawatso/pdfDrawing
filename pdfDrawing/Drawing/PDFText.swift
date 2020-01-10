@@ -107,12 +107,12 @@ extension PDFText: DrawingGestureTextDelegate {
 //        textFieldMultiline21.isMultiline = true
 //        page.addAnnotation(textFieldMultiline21)
         
-        let annotation = DrawingTextAnnotation(bounds: page.bounds(for: pdfView.displayBox), forType: .freeText, withProperties: nil)
+        let annotation = PDFAnnotation(bounds: page.bounds(for: pdfView.displayBox), forType: .freeText, withProperties: nil)
 //         annotation.contents = "Hello, world!"
 //         annotation.font = UIFont.systemFont(ofSize: 15.0)
 //         annotation.fontColor = .blue
 //         annotation.color = .clear
-//         page.addAnnotation(annotation)
+         page.addAnnotation(annotation)
      }
 }
 
@@ -158,7 +158,7 @@ extension PDFText: ResizableViewDelegate {
     }
 }
 
-public class PDFTextAnnotationView: ResizableView, PDFAnnotationView, UITextFieldDelegate {
+public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
     public var parent: MyPDFAnnotaion?
     override public var canBecomeFirstResponder: Bool { return true }
     override var menuItems: [UIMenuItem] {
