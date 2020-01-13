@@ -222,6 +222,24 @@ public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
         self.textView.isUserInteractionEnabled = true
         self.textView.becomeFirstResponder()
     }
+    
+    public func addAccessoryView() {
+        let doneButton = UIBarButtonItem.init(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: self, action: "doneBtnfromKeyboardClicked")
+        let flexSpace: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: self, action: nil)
+        let toolbar = UIToolbar()
+        toolbar.barStyle = UIBarStyle.default
+        toolbar.isTranslucent = true
+        toolbar.tintColor = UIColor.blue
+        toolbar.sizeToFit()
+        toolbar.setItems([flexSpace, doneButton], animated: false)
+        toolbar.isUserInteractionEnabled = true
+        textView.inputAccessoryView = toolbar
+    }
+    
+
+    @objc func doneBtnfromKeyboardClicked (){
+        self.textView.endEditing(true)
+    }
 
     override public func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
 
