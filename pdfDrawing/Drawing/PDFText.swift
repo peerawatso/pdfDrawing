@@ -221,6 +221,7 @@ public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
         self.isLocked = true
         self.textView.isUserInteractionEnabled = true
         self.textView.becomeFirstResponder()
+        self.addAccessoryView()
     }
     
     public func addAccessoryView() {
