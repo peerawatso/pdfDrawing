@@ -83,16 +83,14 @@ extension PDFText: DrawingGestureTextDelegate {
     public func gestureRecognizerMoved(_ touch: UITouch, _ location: CGPoint) {
         guard let page = currentPage else { return }
         self.view.touchesMoved([touch], with: nil)
-        drawAnnotation(page: page)
     }
     
     public func gestureRecognizerEnded(_ touch: UITouch, _ location: CGPoint) {
         guard let page = currentPage else { return }
         self.view.touchesEnded([touch], with: nil)
-        drawAnnotation(page: page)
     }
     
-    public func drawAnnotation(page: PDFPage){
+    public func drawAnnotation(page: PDFPage, text: String, font: UIFont){
 //         let annotation = PDFAnnotation(bounds: page.bounds(for: pdfView.displayBox), forType: .freeText, withProperties:    nil)
 //         page.addAnnotation(annotation)
 //        var textFieldMultiline21 = PDFAnnotation()
@@ -108,9 +106,9 @@ extension PDFText: DrawingGestureTextDelegate {
 //        page.addAnnotation(textFieldMultiline21)
         
         let annotation = PDFAnnotation(bounds: page.bounds(for: pdfView.displayBox), forType: .freeText, withProperties: nil)
-//         annotation.contents = "Hello, world!"
-//         annotation.font = UIFont.systemFont(ofSize: 15.0)
-//         annotation.fontColor = .blue
+         annotation.contents = text
+         annotation.font = font
+         annotation.fontColor = .blue
          annotation.color = .clear
          page.addAnnotation(annotation)
      }
@@ -217,18 +215,17 @@ public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
 
     @objc public func menuActionEdit(_ sender: Any!) {
 //        self.delegate?.resizableViewDidSelectAction(view: self, action: "edit")
-
         self.isLocked = true
         self.textView.isUserInteractionEnabled = true
         self.textView.becomeFirstResponder()
        
     }
-    
-   
-    
 
     @objc func doneBtnfromKeyboardClicked (sender: Any){
         self.textView.endEditing(true)
+        let pdfText = PDFText()
+        guard let page = pdfText.currentPage else { return }
+        pdfText.drawAnnotation(page: page, text: self.text, font: self.font)
     }
 
     override public func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
