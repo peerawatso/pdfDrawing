@@ -83,20 +83,16 @@ extension PDFText: DrawingGestureTextDelegate {
     public func gestureRecognizerMoved(_ touch: UITouch, _ location: CGPoint) {
         guard let page = currentPage else { return }
         self.view.touchesMoved([touch], with: nil)
-        let text  = "text"
-        let font = UIFont.systemFont(ofSize: 15)
-        drawAnnotation(page: page, text: text, font: font)
+//        drawAnnotation(page: page, text: text, font: font)
     }
     
     public func gestureRecognizerEnded(_ touch: UITouch, _ location: CGPoint) {
         guard let page = currentPage else { return }
         self.view.touchesEnded([touch], with: nil)
-        let text  = "text"
-        let font = UIFont.systemFont(ofSize: 15)
-        drawAnnotation(page: page, text: text, font: font)
+//        drawAnnotation(page: page, text: text, font: font)
     }
     
-    public func drawAnnotation(page: PDFPage, text: String, font: UIFont){
+    public func drawAnnotation(page: PDFPage, text: String, font: UIFont, frame: CGRect){
 //         let annotation = PDFAnnotation(bounds: page.bounds(for: pdfView.displayBox), forType: .freeText, withProperties:    nil)
 //         page.addAnnotation(annotation)
 //        var textFieldMultiline21 = PDFAnnotation()
@@ -111,8 +107,8 @@ extension PDFText: DrawingGestureTextDelegate {
 //        textFieldMultiline21.isMultiline = true
 //        page.addAnnotation(textFieldMultiline21)
         
-        let annotation = PDFAnnotation(bounds: page.bounds(for: pdfView.displayBox), forType: .freeText, withProperties: nil)
-         annotation.contents = "text"
+        let annotation = PDFAnnotation(bounds: frame, forType: .freeText, withProperties: nil)
+         annotation.contents = text
          annotation.font = UIFont.systemFont(ofSize: 15)
          annotation.fontColor = .blue
          annotation.color = .clear
@@ -231,7 +227,7 @@ public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
         self.textView.endEditing(true)
         let pdfText = PDFText()
         guard let page = pdfText.currentPage else { return }
-        pdfText.drawAnnotation(page: page, text: self.text, font: self.font)
+        pdfText.drawAnnotation(page: page, text: self.text, font: self.font, frame: self.frame)
         self.removeFromSuperview()
     }
 
