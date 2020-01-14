@@ -83,11 +83,17 @@ extension PDFText: DrawingGestureTextDelegate {
     public func gestureRecognizerMoved(_ touch: UITouch, _ location: CGPoint) {
         guard let page = currentPage else { return }
         self.view.touchesMoved([touch], with: nil)
+        let text  = "text"
+        let font = UIFont.systemFont(ofSize: 15)
+        drawAnnotation(page: page, text: text, font: font)
     }
     
     public func gestureRecognizerEnded(_ touch: UITouch, _ location: CGPoint) {
         guard let page = currentPage else { return }
         self.view.touchesEnded([touch], with: nil)
+        let text  = "text"
+        let font = UIFont.systemFont(ofSize: 15)
+        drawAnnotation(page: page, text: text, font: font)
     }
     
     public func drawAnnotation(page: PDFPage, text: String, font: UIFont){
