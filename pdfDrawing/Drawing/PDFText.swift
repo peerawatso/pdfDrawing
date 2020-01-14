@@ -106,8 +106,8 @@ extension PDFText: DrawingGestureTextDelegate {
 //        page.addAnnotation(textFieldMultiline21)
         
         let annotation = PDFAnnotation(bounds: page.bounds(for: pdfView.displayBox), forType: .freeText, withProperties: nil)
-         annotation.contents = text
-         annotation.font = font
+         annotation.contents = "text"
+         annotation.font = UIFont.systemFont(ofSize: 15)
          annotation.fontColor = .blue
          annotation.color = .clear
          page.addAnnotation(annotation)
