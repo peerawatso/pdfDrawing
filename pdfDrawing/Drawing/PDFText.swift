@@ -111,6 +111,7 @@ extension PDFText: DrawingGestureTextDelegate {
          annotation.fontColor = .blue
          annotation.color = .clear
          page.addAnnotation(annotation)
+        self.view.removeFromSuperview()
      }
 }
 
