@@ -221,21 +221,10 @@ public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
         self.isLocked = true
         self.textView.isUserInteractionEnabled = true
         self.textView.becomeFirstResponder()
-        self.addAccessoryView()
+        self.textView.addAccessoryView()
     }
     
-    public func addAccessoryView() {
-        let doneButton = UIBarButtonItem.init(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: self, action: "doneBtnfromKeyboardClicked")
-        let flexSpace: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: self, action: nil)
-        let toolbar = UIToolbar()
-        toolbar.barStyle = UIBarStyle.default
-        toolbar.isTranslucent = true
-        toolbar.tintColor = UIColor.blue
-        toolbar.sizeToFit()
-        toolbar.setItems([flexSpace, doneButton], animated: false)
-        toolbar.isUserInteractionEnabled = true
-        textView.inputAccessoryView = toolbar
-    }
+   
     
 
     @objc func doneBtnfromKeyboardClicked (){
@@ -251,6 +240,21 @@ public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
     }
     
     
+}
+
+extension UITextView {
+    public func addAccessoryView() {
+           let doneButton = UIBarButtonItem.init(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: self, action: "doneBtnfromKeyboardClicked")
+           let flexSpace: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: self, action: nil)
+           let toolbar = UIToolbar()
+           toolbar.barStyle = UIBarStyle.default
+           toolbar.isTranslucent = true
+           toolbar.tintColor = UIColor.blue
+           toolbar.sizeToFit()
+           toolbar.setItems([flexSpace, doneButton], animated: false)
+           toolbar.isUserInteractionEnabled = true
+           self.inputAccessoryView = toolbar
+       }
 }
 
 
