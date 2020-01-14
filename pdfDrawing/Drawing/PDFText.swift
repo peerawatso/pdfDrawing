@@ -111,7 +111,6 @@ extension PDFText: DrawingGestureTextDelegate {
          annotation.fontColor = .blue
          annotation.color = .clear
          page.addAnnotation(annotation)
-        self.view.removeFromSuperview()
      }
 }
 
@@ -227,6 +226,7 @@ public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
         let pdfText = PDFText()
         guard let page = pdfText.currentPage else { return }
         pdfText.drawAnnotation(page: page, text: self.text, font: self.font)
+        self.removeFromSuperview()
     }
 
     override public func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
