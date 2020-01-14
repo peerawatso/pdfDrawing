@@ -89,7 +89,6 @@ extension PDFText: DrawingGestureTextDelegate {
     public func gestureRecognizerEnded(_ touch: UITouch, _ location: CGPoint) {
         guard let page = currentPage else { return }
         self.view.touchesEnded([touch], with: nil)
-//        drawAnnotation(page: page, text: text, font: font)
     }
     
     public func drawAnnotation(page: PDFPage, text: String, font: UIFont, frame: CGRect){
@@ -228,6 +227,8 @@ public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
         let pdfText = PDFText()
         guard let page = pdfText.currentPage else { return }
         pdfText.drawAnnotation(page: page, text: self.text, font: self.font, frame: self.frame)
+        pdfText.isTrue = false
+        self.textView.isUserInteractionEnabled = false
         self.removeFromSuperview()
     }
 
