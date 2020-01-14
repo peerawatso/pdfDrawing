@@ -229,7 +229,12 @@ public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
         pdfText.drawAnnotation(page: page, text: self.text, font: self.font, frame: self.frame)
         pdfText.isTrue = false
         self.textView.isUserInteractionEnabled = false
-        self.removeFromSuperview()
+        let pdftextview = PDFTextAnnotationView()
+        for subview in pdftextview.subviews{
+            if subview is PDFTextAnnotationView {
+                subview.removeFromSuperview()
+            }
+        }
     }
 
     override public func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
