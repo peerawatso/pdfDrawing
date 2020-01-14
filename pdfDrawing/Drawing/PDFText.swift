@@ -221,13 +221,13 @@ public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
         self.isLocked = true
         self.textView.isUserInteractionEnabled = true
         self.textView.becomeFirstResponder()
-        self.textView.addAccessoryView()
+        self.textView.addAccessoryView(title: "Done", target: self, selector: #selector(doneBtnfromKeyboardClicked(sender:)))
     }
     
    
     
 
-    @objc func doneBtnfromKeyboardClicked (){
+    @objc func doneBtnfromKeyboardClicked (sender: Any){
         self.textView.endEditing(true)
     }
 
@@ -243,17 +243,25 @@ public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
 }
 
 extension UITextView {
-    public func addAccessoryView() {
-           let doneButton = UIBarButtonItem.init(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: self, action: "doneBtnfromKeyboardClicked")
-           let flexSpace: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: self, action: nil)
-           let toolbar = UIToolbar()
-           toolbar.barStyle = UIBarStyle.default
-           toolbar.isTranslucent = true
-           toolbar.tintColor = UIColor.blue
-           toolbar.sizeToFit()
-           toolbar.setItems([flexSpace, doneButton], animated: false)
-           toolbar.isUserInteractionEnabled = true
-           self.inputAccessoryView = toolbar
+    public func addAccessoryView(title: String, target: Any, selector: Selector) {
+//           let doneButton = UIBarButtonItem.init(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: self, action: "doneBtnfromKeyboardClicked")
+//           let flexSpace: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: self, action: nil)
+//           let toolbar = UIToolbar()
+//           toolbar.barStyle = UIBarStyle.default
+//           toolbar.isTranslucent = true
+//           toolbar.tintColor = UIColor.blue
+//           toolbar.sizeToFit()
+//           toolbar.setItems([flexSpace, doneButton], animated: false)
+//           toolbar.isUserInteractionEnabled = true
+//           self.inputAccessoryView = toolbar
+        let toolBar = UIToolbar(frame: CGRect(x: 0.0,
+                                              y: 0.0,
+                                              width: UIScreen.main.bounds.size.width,
+                                              height: 44.0))//1
+        let flexible = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)//2
+        let barButton = UIBarButtonItem(title: title, style: .plain, target: target, action: selector)//3
+        toolBar.setItems([flexible, barButton], animated: false)//4
+        self.inputAccessoryView = toolBar//5
        }
 }
 
