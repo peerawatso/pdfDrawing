@@ -209,7 +209,7 @@ public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
         self.textView.delegate = parent
         self.textView.isUserInteractionEnabled = false
         self.textView.backgroundColor = UIColor.clear
-       
+        self.textView.addAccessoryView(title: "Done", target: self, selector: #selector(doneBtnfromKeyboardClicked(sender:)))
 //        self.backgroundColor = UIColor.clear
 
         self.addSubview(textView)
@@ -221,7 +221,7 @@ public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
         self.isLocked = true
         self.textView.isUserInteractionEnabled = true
         self.textView.becomeFirstResponder()
-        self.textView.addAccessoryView(title: "Done", target: self, selector: #selector(doneBtnfromKeyboardClicked(sender:)))
+       
     }
     
    
