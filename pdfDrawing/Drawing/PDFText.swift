@@ -223,7 +223,7 @@ public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
     }
 
     @objc func doneBtnfromKeyboardClicked (sender: Any){
-        self.textView.endEditing(true)
+//        self.textView.endEditing(true)
         let pdfText = PDFText()
         guard let page = pdfText.currentPage else { return }
         print(page)
