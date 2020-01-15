@@ -226,6 +226,7 @@ public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
         self.textView.endEditing(true)
         let pdfText = PDFText()
         guard let page = pdfText.currentPage else { return }
+        print(page)
         pdfText.drawAnnotation(page: page, text: self.text, font: self.font, frame: self.frame)
         pdfText.isTrue = false
         self.textView.isUserInteractionEnabled = false
