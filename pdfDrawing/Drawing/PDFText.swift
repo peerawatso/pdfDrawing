@@ -86,7 +86,7 @@ extension PDFText: DrawingGestureTextDelegate {
         guard let page = currentPage else { return }
         if isTrue == false{
             pdfView.addSubview(mutableView())
-            isTrue = true
+//            isTrue = true
         }
         self.view.touchesEnded([touch], with: nil)
     }
