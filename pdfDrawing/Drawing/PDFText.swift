@@ -72,11 +72,7 @@ extension PDFText: DrawingGestureTextDelegate {
         }
         guard let page = pdfView.page(for: location, nearest: true) else { return }
         currentPage = page
-        if isTrue == false{
-            pdfView.addSubview(mutableView())
-            isTrue = true
-            
-        }
+       
         self.view.touchesBegan([touch], with: nil)
     }
     
@@ -88,6 +84,10 @@ extension PDFText: DrawingGestureTextDelegate {
     
     public func gestureRecognizerEnded(_ touch: UITouch, _ location: CGPoint) {
         guard let page = currentPage else { return }
+        if isTrue == false{
+            pdfView.addSubview(mutableView())
+            isTrue = true
+        }
         self.view.touchesEnded([touch], with: nil)
     }
     
