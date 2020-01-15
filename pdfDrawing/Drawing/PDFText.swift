@@ -122,9 +122,9 @@ extension PDFText: ResizableViewDelegate {
         self.rect = self.view.frame
     }
 
-//    func resizableViewDidSelectAction(view: ResizableView, action: String) {
-//        self.delegate?.annotation(annotation: self, selected: action)
-//    }
+    public func resizableViewDidSelectAction(view: ResizableView, action: String) {
+        self.delegate?.annotation(annotation: self, selected: action)
+    }
 }
 
  extension PDFText: PDFAnnotationButtonable {
@@ -208,17 +208,18 @@ public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
         self.textView.delegate = parent
         self.textView.isUserInteractionEnabled = false
         self.textView.backgroundColor = UIColor.clear
-        self.textView.addAccessoryView(title: "Done", target: self, selector: #selector(doneBtnfromKeyboardClicked(sender:)))
+        
 //        self.backgroundColor = UIColor.clear
 
         self.addSubview(textView)
     }
 
     @objc public func menuActionEdit(_ sender: Any!) {
-//        self.delegate?.resizableViewDidSelectAction(view: self, action: "edit")
+        self.delegate?.resizableViewDidSelectAction(view: self, action: "edit")
         self.isLocked = true
         self.textView.isUserInteractionEnabled = true
         self.textView.becomeFirstResponder()
+        self.textView.addAccessoryView(title: "Done", target: self, selector: #selector(doneBtnfromKeyboardClicked(sender:)))
        
     }
 

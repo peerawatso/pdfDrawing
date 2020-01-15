@@ -31,7 +31,7 @@ public struct CGPointResizableViewAnchorPointPair {
 public protocol ResizableViewDelegate {
     func resizableViewDidBeginEditing(view: ResizableView)
     func resizableViewDidEndEditing(view: ResizableView)
-//    func resizableViewDidSelectAction(view: ResizableView, action: String)
+    func resizableViewDidSelectAction(view: ResizableView, action: String)
 }
 
 public class ResizableView: UIView {
@@ -346,7 +346,7 @@ public class ResizableView: UIView {
     }
 
     @objc func menuActionDelete(_ sender: Any!) {
-//        self.delegate?.resizableViewDidSelectAction(view: self, action: "delete")
+        self.delegate?.resizableViewDidSelectAction(view: self, action: "delete")
     }
     
     override open func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
