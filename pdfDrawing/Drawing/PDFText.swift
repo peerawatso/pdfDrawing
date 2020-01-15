@@ -86,7 +86,7 @@ extension PDFText: DrawingGestureTextDelegate {
         guard let page = currentPage else { return }
         if isTrue == false{
             pdfView.addSubview(mutableView())
-//            isTrue = true
+            isTrue = true
         }
         self.view.touchesEnded([touch], with: nil)
     }
@@ -212,6 +212,7 @@ public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
 //        self.backgroundColor = UIColor.clear
 
         self.addSubview(textView)
+        self.textView.addAccessoryView(title: "Done", target: self, selector: #selector(doneBtnfromKeyboardClicked(sender:)))
     }
 
     @objc public func menuActionEdit(_ sender: Any!) {
@@ -219,8 +220,6 @@ public class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
         self.isLocked = true
         self.textView.isUserInteractionEnabled = true
         self.textView.becomeFirstResponder()
-        self.textView.addAccessoryView(title: "Done", target: self, selector: #selector(doneBtnfromKeyboardClicked(sender:)))
-       
     }
 
     @objc func doneBtnfromKeyboardClicked (sender: Any){
