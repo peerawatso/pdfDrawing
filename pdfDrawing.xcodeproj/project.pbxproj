@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71EBA4D523DECEB40099E1B6 /* UIBezierPath+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EBA4D423DECEB40099E1B6 /* UIBezierPath+.swift */; };
 		71F1591D231A715300C3FEEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F1591C231A715300C3FEEC /* AppDelegate.swift */; };
 		71F1591F231A715300C3FEEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F1591E231A715300C3FEEC /* ViewController.swift */; };
 		71F15922231A715300C3FEEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F15920231A715300C3FEEC /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		71EBA4D423DECEB40099E1B6 /* UIBezierPath+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+.swift"; sourceTree = "<group>"; };
 		71F15919231A715300C3FEEC /* pdfDrawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pdfDrawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71F1591C231A715300C3FEEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71F1591E231A715300C3FEEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				71F1614F23B3465C00B6433E /* DrawingTextAnnotation.swift */,
 				71F3CB3423B510C700F2C702 /* DrawingGestureTextDelegate.swift */,
 				71F3CB3623B5B70700F2C702 /* PDFText.swift */,
+				71EBA4D423DECEB40099E1B6 /* UIBezierPath+.swift */,
 			);
 			path = Drawing;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				71F15930231A80C500C3FEEC /* PDFDrawer.swift in Sources */,
 				71F15938231A83DC00C3FEEC /* PDFPage+Selection.swift in Sources */,
 				71F3CB3523B510C700F2C702 /* DrawingGestureTextDelegate.swift in Sources */,
+				71EBA4D523DECEB40099E1B6 /* UIBezierPath+.swift in Sources */,
 				71F15934231A834D00C3FEEC /* DrawingGestureRecognizerDelegate.swift in Sources */,
 				71F1615023B3465C00B6433E /* DrawingTextAnnotation.swift in Sources */,
 				71F1614A23B32E1A00B6433E /* ResizeableView.swift in Sources */,
