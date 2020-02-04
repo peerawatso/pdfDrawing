@@ -12,9 +12,9 @@ import PDFKit
 public class DrawingAnnotation: MyPDFAnnotaion {
     public var path = UIBezierPath()
     
-//    func completed() {
-//        add(path)
-//    }
+    func completed() {
+        add(path)
+    }
     
     override public func draw(with box: PDFDisplayBox, in context: CGContext) {
         super.draw(with: box, in: context)
