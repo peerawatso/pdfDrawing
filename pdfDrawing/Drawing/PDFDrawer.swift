@@ -104,6 +104,7 @@ public class PDFDrawer {
         var path: UIBezierPath?
         var currentAnnotation : DrawingAnnotation?
         var currentAnnotation1 : DrawingAnnotation?
+        var currentAnnotation2 : PDFAnnotation?
         var currentPoint : CGPoint?
         var currentPage: PDFPage?
         var currentPage1: PDFPage?
@@ -125,7 +126,7 @@ public class PDFDrawer {
         var urlPath : URL? = nil
         var db: OpaquePointer?
         var pdfDocument: PDFDocument?
-        var currentAnnotation2: MyPDFAnnotaion?
+//        var currentAnnotation2: MyPDFAnnotaion?
         var Addannotations : PDFAnnotation?
         var prevPoint : CGPoint?
         var prevPoint2 : CGPoint?
@@ -136,6 +137,7 @@ public class PDFDrawer {
     public var path: UIBezierPath?
     public var currentAnnotation : DrawingAnnotation?
     public var currentAnnotation1 : DrawingAnnotation?
+    public var currentAnnotation2 : PDFAnnotation?
     public var currentPoint : CGPoint?
     public var currentPage: PDFPage?
     public var currentPage1: PDFPage?
@@ -155,7 +157,6 @@ public class PDFDrawer {
     public var urlPath : URL? = nil
     var db: OpaquePointer?
     var pdfDocument: PDFDocument?
-    var currentAnnotation2: MyPDFAnnotaion?
     var Addannotations : PDFAnnotation?
     var prevPoint : CGPoint?
     var prevPoint2 : CGPoint?
@@ -360,7 +361,7 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         return annotation
     }
     
-    public func createFinalAnnotation(page: PDFPage ,point: CGPoint ,path: UIBezierPath) -> DrawingAnnotation {
+    public func createFinalAnnotation(page: PDFPage ,point: CGPoint ,path: UIBezierPath) -> PDFAnnotation {
         let border = PDFBorder()
         border.lineWidth = drawingTool.width
         
@@ -416,11 +417,10 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         guard let path = path else { return }
         
         if currentAnnotation == nil {
-            currentAnnotation = createFinalAnnotation(page: onPage ,point: point ,path: path)
+            currentAnnotation2 = createFinalAnnotation(page: onPage ,point: point ,path: path)
         }
         
-        currentAnnotation?.path = path
-        onPage.addAnnotation(currentAnnotation!)
+        onPage.addAnnotation(currentAnnotation2!)
     }
     
     private func removeAnnotationAtPoint(point: CGPoint, page: PDFPage) {
