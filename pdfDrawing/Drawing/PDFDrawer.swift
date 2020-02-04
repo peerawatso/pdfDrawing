@@ -254,7 +254,7 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         path?.move(to: convertedPoint)
 //        drawAnnotation(onPage: page, point: convertedPoint)
 //        let finalAnnoattion = createFinalAnnotation(page: page, point: convertedPoint, path: path!)
-        drawAnnotationFinal(onPage: page, point: convertedPoint)
+        drawAnnotation(onPage: page, point: convertedPoint)
 //        currentAnnotation?.completed()
         currentAnnotation = nil
     }
