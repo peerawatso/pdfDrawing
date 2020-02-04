@@ -295,69 +295,69 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         border.lineWidth = drawingTool.width
         annotation.color = color.withAlphaComponent(drawingTool.alpha)
         annotation.border = border
-//        let uuid = UUID().uuidString
-//        if(redoAnnotation.count > 0){
-//    
-//            redoAnnotation.removeAll()
-//            let border = PDFBorder()
-//            border.lineWidth = drawingTool.width
-//            
-//            annotation.color = color.withAlphaComponent(drawingTool.alpha)
-//            annotation.border = border
-//            //            annotation.status = "show"
-//            //            annotation.pageCurrent = page
-//            //            annotation.colorCurrent = color.withAlphaComponent(drawingTool.alpha)
-//            //            annotation.borderCurrent = border
-//            //            annotation.pathCurrent = path
-//            //            annotation.pointCurrent = point
-//            //            let a = NSCoder.string(for: point)
-//            //            annotation.StringPointCurrent = a
-//            //            annotation.alphaCurrent = drawingTool.alpha
-//            //            annotation.toolCurrent = annotation.type
-//            ////            annotation.type = String(drawingTool.rawValue)
-//            ////            annotation.type = uuid
-//            //            annotation.uuid = uuid
-//            //            let p  = Path(path: path, color: annotation.color, point: point, border: border, page: page, alpha: drawingTool.alpha, tool: drawingTool.rawValue)
-//            //            pathArrays.append(p)
-//            undoAnnotation.append(annotation)
-//            //            historyAnnotation.append(annotation)
-//            
-//            delegate?.undo(isUndo: undoAnnotation.count > 0)
-//            delegate?.redo(isRedo: redoAnnotation.count > 0)
-//            
-//            return annotation
-//        }else if(redoAnnotation.count == 0) {
-//            let border = PDFBorder()
-//            border.lineWidth = drawingTool.width
-//            //            let annotation = DrawingAnnotation(bounds: page.bounds(for: pdfView.displayBox), forType: .ink, withProperties: nil)
-//            annotation.color = color.withAlphaComponent(drawingTool.alpha)
-//            annotation.border = border
-//            annotation.status = "show"
-//            //            let uuid = UUID().uuidString
-//            ////            print(uuid)
-//            //            annotation.type = uuid
-//            //            print(annotation.description)
-//            //            annotation.pageCurrent = page
-//            //            annotation.colorCurrent = color.withAlphaComponent(drawingTool.alpha)
-//            //            annotation.borderCurrent = border
-//            //            annotation.pathCurrent = path
-//            //            let a = NSCoder.string(for: point)
-//            //            annotation.pointCurrent = point
-//            //            annotation.StringPointCurrent = a
-//            //            annotation.alphaCurrent = drawingTool.alpha
-//            //            annotation.toolCurrent = annotation.type
-//            ////            annotation.type = String(drawingTool.rawValue)
-//            ////            annotation.type = uuid
-//            //            annotation.uuid = uuid
-//            
-//            //            let p  = Path(path: path, color: annotation.color, point: point, border: border, page: page, alpha: drawingTool.alpha, tool: drawingTool.rawValue)
-//            undoAnnotation.append(annotation)
-//            //            historyAnnotation.append(annotation)
-//            //            pathArrays.append(p)
-//            delegate?.undo(isUndo: undoAnnotation.count > 0)
-//            
-//            return annotation
-//        }
+        let uuid = UUID().uuidString
+        if(redoAnnotation.count > 0){
+    
+            redoAnnotation.removeAll()
+            let border = PDFBorder()
+            border.lineWidth = drawingTool.width
+            
+            annotation.color = color.withAlphaComponent(drawingTool.alpha)
+            annotation.border = border
+            //            annotation.status = "show"
+            //            annotation.pageCurrent = page
+            //            annotation.colorCurrent = color.withAlphaComponent(drawingTool.alpha)
+            //            annotation.borderCurrent = border
+            //            annotation.pathCurrent = path
+            //            annotation.pointCurrent = point
+            //            let a = NSCoder.string(for: point)
+            //            annotation.StringPointCurrent = a
+            //            annotation.alphaCurrent = drawingTool.alpha
+            //            annotation.toolCurrent = annotation.type
+            ////            annotation.type = String(drawingTool.rawValue)
+            ////            annotation.type = uuid
+            //            annotation.uuid = uuid
+            //            let p  = Path(path: path, color: annotation.color, point: point, border: border, page: page, alpha: drawingTool.alpha, tool: drawingTool.rawValue)
+            //            pathArrays.append(p)
+            undoAnnotation.append(annotation)
+            //            historyAnnotation.append(annotation)
+            
+            delegate?.undo(isUndo: undoAnnotation.count > 0)
+            delegate?.redo(isRedo: redoAnnotation.count > 0)
+            
+            return annotation
+        }else if(redoAnnotation.count == 0) {
+            let border = PDFBorder()
+            border.lineWidth = drawingTool.width
+            //            let annotation = DrawingAnnotation(bounds: page.bounds(for: pdfView.displayBox), forType: .ink, withProperties: nil)
+            annotation.color = color.withAlphaComponent(drawingTool.alpha)
+            annotation.border = border
+            annotation.status = "show"
+            //            let uuid = UUID().uuidString
+            ////            print(uuid)
+            //            annotation.type = uuid
+            //            print(annotation.description)
+            //            annotation.pageCurrent = page
+            //            annotation.colorCurrent = color.withAlphaComponent(drawingTool.alpha)
+            //            annotation.borderCurrent = border
+            //            annotation.pathCurrent = path
+            //            let a = NSCoder.string(for: point)
+            //            annotation.pointCurrent = point
+            //            annotation.StringPointCurrent = a
+            //            annotation.alphaCurrent = drawingTool.alpha
+            //            annotation.toolCurrent = annotation.type
+            ////            annotation.type = String(drawingTool.rawValue)
+            ////            annotation.type = uuid
+            //            annotation.uuid = uuid
+            
+            //            let p  = Path(path: path, color: annotation.color, point: point, border: border, page: page, alpha: drawingTool.alpha, tool: drawingTool.rawValue)
+            undoAnnotation.append(annotation)
+            //            historyAnnotation.append(annotation)
+            //            pathArrays.append(p)
+            delegate?.undo(isUndo: undoAnnotation.count > 0)
+            
+            return annotation
+        }
         return annotation
     }
     
