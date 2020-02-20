@@ -253,9 +253,9 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         //        path?.addQuadCurve(to: convertedPoint, controlPoint: convertedPoint2)
         path?.move(to: convertedPoint)
 //        drawAnnotation(onPage: page, point: convertedPoint)
-//        let finalAnnoattion = createFinalAnnotation(page: page, point: convertedPoint, path: path!)
-        drawAnnotation(onPage: page, point: convertedPoint)
-        currentAnnotation?.completed()
+        let finalAnnoattion = createFinalAnnotation(page: page, point: convertedPoint, path: path!)
+//        drawAnnotation(onPage: page, point: convertedPoint)
+//        currentAnnotation?.completed()
         currentAnnotation = nil
     }
     

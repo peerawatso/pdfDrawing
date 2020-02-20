@@ -61,15 +61,22 @@ public class DrawingGestureRecognizer: UIGestureRecognizer {
 //        }
         if let touch = touches.first,
             //            touch.type == .pencil, // Comment this line to test on simulator without Apple Pencil
+            //            touch.type == .pencil,
             let numberOfTouches = event?.allTouches?.count,
             numberOfTouches == 1 {
             drawingDelegate?.checkNumberOfTouches(numberofTouches: numberOfTouches)
-
+            
             state = .began
-
+            
             let location = touch.location(in: self.view)
-//            let prevlocation = touch.previousLocation(in: self.view)
+            let prevlocation = touch.previousLocation(in: self.view)
             drawingDelegate?.gestureRecognizerBegan?(location)
+        } else if let numbersOfTouches = event?.allTouches?.count,
+            numbersOfTouches > 1 {
+            drawingDelegate?.checkNumberOfTouches(numberofTouches: numbersOfTouches)
+            state = .failed
+        } else {
+            state = .failed
         }
     }
     
