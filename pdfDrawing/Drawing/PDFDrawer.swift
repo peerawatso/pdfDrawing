@@ -400,6 +400,11 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         return annotation
     }
     
+    private func forceRedraw(annotation: PDFAnnotation, onPage: PDFPage) {
+        onPage.removeAnnotation(annotation)
+        onPage.addAnnotation(annotation)
+    }
+    
     private func drawAnnotation(onPage: PDFPage, point: CGPoint) {
         guard let path = path else { return }
         
@@ -408,7 +413,8 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
         }
         
         currentAnnotation?.path = path
-        onPage.addAnnotation(currentAnnotation!)
+//        onPage.addAnnotation(currentAnnotation!)
+        forceRedraw(annotation: currentAnnotation!, onPage: onPage)
         //        guard let pathPdf = urlPath else { return }
         //        let isSuccess = self.pdfView.document?.write(to: pathPdf)
         //        currentPage = onPage
