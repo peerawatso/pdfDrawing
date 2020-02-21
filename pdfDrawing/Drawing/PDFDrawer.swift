@@ -382,6 +382,7 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
             annotation.border = border
             annotation.add(signingPathCentered)
             undoAnnotation.append(annotation)
+            page.addAnnotation(annotation)
             delegate?.undo(isUndo: undoAnnotation.count > 0)
             delegate?.redo(isRedo: redoAnnotation.count > 0)
             return annotation
@@ -392,6 +393,7 @@ extension PDFDrawer: DrawingGestureRecognizerDelegate {
             annotation.border = border
             annotation.add(signingPathCentered)
             undoAnnotation.append(annotation)
+            page.addAnnotation(annotation)
             delegate?.undo(isUndo: undoAnnotation.count > 0)
             return annotation
         }
